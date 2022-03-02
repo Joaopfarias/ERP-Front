@@ -1,0 +1,23 @@
+.bg {
+  background-color: #f4f7ff;
+}
+
+.bt-item {
+  &_active {
+    color: black !important;
+    font-weight: 600;
+    border-bottom: 4px solid #e20000 !important;
+    padding-bottom: 5px;
+  }
+
+  &_inactive {
+    border-bottom: 4px solid #e20000 !important;
+    padding-bottom: 5px;
+    color: #8d8d8d;
+  }
+}
+
+.t-gray {
+  color: #8d8d8d;
+  font-weight: 600;
+}

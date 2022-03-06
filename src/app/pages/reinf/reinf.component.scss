@@ -1,23 +1,65 @@
 .bg {
-  background-color: #f4f7ff;
+  background-color: #F3F5F9;
 }
 
 .bt-item {
   &_active {
     color: black !important;
     font-weight: 600;
-    border-bottom: 4px solid #e20000 !important;
+    border-bottom: 4px solid #E21B23 !important;
     padding-bottom: 5px;
   }
 
   &_inactive {
-    border-bottom: 4px solid #e20000 !important;
+    font-weight: 600;
     padding-bottom: 5px;
     color: #8d8d8d;
   }
 }
 
+.table-content {
+  overflow-x: auto;
+  margin: 0px 15px;
+  border-radius: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
 .t-gray {
   color: #8d8d8d;
   font-weight: 600;
+}
+
+thead {
+  background-color: #f3f5f9;
+
+  th {
+    padding: 1rem;
+    font-weight: 700;
+  }
+}
+
+tbody {
+  th {
+    padding: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.table-footer {
+  background-color: #f3f5f9;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.sort-icon {
+  color: #797979;
+  &:hover {
+    color: #000000;
+  }
 }

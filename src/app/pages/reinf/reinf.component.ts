@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reinf.component.scss']
 })
 export class ReinfComponent implements OnInit {
-  items = [{}, {}, {}, {}, {}, {}, {}, {}]
+  items = [{}, {}, {}]
   top10: number = 10
   top400: number = 400
   click: boolean = false

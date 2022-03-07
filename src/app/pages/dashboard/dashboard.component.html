@@ -1,19 +1,97 @@
-<div class="d-flex justify-content-between">
-  <div class="">What is Lorem Ipsum?
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-    Lorem Ipsum.
+<div class="d-block">
+  <!-- header -->
+  <div class="d-flex justify-content-center bg">
+    <div class="col-auto m-3 text-white">
+      <label class="fw-bolder fs-4">Seja bem vindo, Robert!</label><br />
+      Somos seu sistema de <strong>Planejamento de Recursos Empresariais</strong>
+    </div>
+    <div class="d-flex justify-content-end col-md py-3">
+      <div class="col-md-6 mx-3">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>ABASTECER PROMO EIRELI</option>
+          <option value="1">ABASTECER PROMO EIRELI</option>
+          <option value="2">ABASTECER PROMO EIRELI</option>
+          <option value="3">ABASTECER PROMO EIRELI</option>
+        </select>
+      </div>
+      <div class="mt-0">
+        <i role="button" class="bi bi-bell text-white fs-3"></i>
+      </div>
+      <div class="mt-1 mx-3">
+        <a class="d-block link-dark text-decoration-none mx-1">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle mx-1">
+          <span class="text-white">Olá Robert</span>
+          <i role="button" class="bi bi-chevron-down mx-3 text-white"></i>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="">
-    Why do we use it?
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-    using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-    page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-    sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-    purpose (injected humour and the like).
+  <!-- body -->
+  <div class="body bg border-bottom">
+    <div class="menu mx-5 d-flex flex-column">
+      <h6 class="text-white"><i class="bi bi-journal-text mx-1"></i>Cadastros</h6>
+      <div class="d-flex justify-content-between">
+        <div class="dash-item" role="button" routerLink="/">
+          <img src="../../../assets/img/book.png" alt="" style="width: 75px; height: 75px;"><br />
+          <label>Sistema</label>
+        </div>
+        <div class="dash-item" role="button" routerLink="/">
+          <img src="../../../assets/img/to-do-list.png" alt="" style="width: 75px; height: 75px;"><br />
+          <label>Gerais</label>
+        </div>
+        <div class="dash-item" role="button" routerLink="/">
+          <img src="../../../assets/img/user.png" alt="" style="width: 75px; height: 75px;"><br />
+          <label>Keyuser</label>
+        </div>
+        <div class="dash-item" role="button" routerLink="/">
+          <img src="../../../assets/img/archive.png" alt="" style="width: 75px; height: 75px;"><br />
+          <label>Funcionarios</label>
+        </div>
+        <div class="dash-item" role="button" routerLink="/">
+          <img src="../../../assets/img/portfolio.png" alt="" style="width: 75px; height: 75px;"><br />
+          <label>Financeiro</label>
+        </div>
+      </div>
+    </div>
+    <div class="section bg2 px-5">
+      <div class="charts d-flex flex-column">
+        <h6 class="m-t"><i class="bi bi-graph-up-arrow text-danger"></i><strong class="mx-1">Relatório Geral</strong>
+        </h6>
+        <div class="d-flex mb-5">
+          <div class="chart-item border d-flex flex-column col-md-7 me-2">
+            <div class="header-chart d-flex justify-content-between">
+              <div class="col-md-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Categoria 01</option>
+                  <option value="1">Categoria 02</option>
+                  <option value="2">Categoria 03</option>
+                  <option value="3">Categoria 04</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Ano</option>
+                  <option value="1">Ano</option>
+                  <option value="2">Ano</option>
+                  <option value="3">Ano</option>
+                </select>
+              </div>
+            </div>
+            <canvas id="lineChart" class="my-auto"></canvas>
+          </div>
+          <div class="chart-item border col-md ms-2">
+            <div class="header-chart d-flex justify-content-between">
+              <div class="col-md-6">
+                <h3>Usuarios</h3>
+              </div>
+              <div class="col-md-2">
+                <button class="btn border btn-light">...</button>
+              </div>
+            </div>
+            <canvas id="pieChart" class=""></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,125 +1,124 @@
 <div class="d-block">
-      <!-- header -->
-      <app-header></app-header>
-      <div class="body">
-        <div class="bg">
-          <div class="header ms-5">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
-                <li class="breadcrumb-item" aria-current="page"><strong>Comissão</strong></li>
-              </ol>
-            </nav>
-          </div>
-          <div class="title  bg ms-5 mt-3">
-            <span class="h4 fw-bolder">Comissão</span>
-            <div class="subtitle d-flex">
-              <p class="mt-2 text-muted" style="font-size: 13px">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley
-                of type and scrambled
-                it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                sheets
-                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                including
-                versions of Lorem Ipsum
-              </p>
-              <div class="mx-5"></div>
-            </div>
-          </div>
+  <!-- header -->
+  <app-header></app-header>
+  <div class="body">
+    <div class="bg">
+      <div class="header ms-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
+            <li class="breadcrumb-item" aria-current="page"><strong>Comissão</strong></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title  bg ms-5 mt-3">
+        <span class="h4 fw-bolder">Comissão</span>
+        <div class="subtitle d-flex">
+          <p class="mt-2 text-muted" style="font-size: 13px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley
+            of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including
+            versions of Lorem Ipsum
+          </p>
+          <div class="mx-5"></div>
         </div>
-        <div class="section border-bottom">
-          <div class="title-section d-inline-flex bg col-md-12">
-            <div class="item ms-5 mt-4 bt-item_active">Parametrização de Comissões</div>
-            <div class="item ms-5 mt-4 bt-item_inactive">Configuração de Comissão de Clientes</div>
-          </div>
-          <div class="content-section mx-5">
-        
-            <div class="header-section d-flex">
-              <div class="search-box col-md-4 me-3">
-                <div class="input-group mt-4 border rounded-3 p-1">
-                  <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
-                    class="form-control bg-none border-0">
-                  <div class="input-group-append border-0">
-                    <button id="button-addon3" type="button" class="btn btn-link text-dark">
-                      <i class="bi bi-search"></i>
-                    </button>
-                  </div>
-                </div>
+      </div>
+    </div>
+    <div class="section border-bottom">
+      <div class="title-section d-inline-flex bg col-md-12">
+        <div class="item ms-5 mt-4 bt-item_active">Parametrização de Comissões</div>
+        <div class="item ms-5 mt-4 bt-item_inactive">Configuração de Comissão de Clientes</div>
+      </div>
+      <div class="content-section mx-5">
+
+        <div class="header-section d-flex">
+          <div class="search-box col-md-4 me-3">
+            <div class="input-group mt-4 border rounded-3 p-1 bg-white">
+              <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
+                class="form-control bg-none border-0">
+              <div class="input-group-append border-0">
+                <button id="button-addon3" type="button" class="btn btn-link text-dark">
+                  <i class="bi bi-search"></i>
+                </button>
               </div>
-              <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
             </div>
-            <div class="body-section mt-4">
-              <div class="table-content">
-                <table class="table table-borderless">
-                  <thead class="">
-                    <tr class="border-bottom">
-                      <th>Ativo<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>ID<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>Cálculo Comissão<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>Vendedores<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>Clientes<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>Bandeiras<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                      <th>Editar<i class="bi bi-sort-{{arrowTo}} sort-icon" (click)="clickDblClick()"></i></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="border-bottom" *ngFor="item of items">
-                      <th>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                        </div>
-                      </th>
-                      <th>16</th>
-                      <th>Segue Regra Padrão</th>
-                      <th>
-                        José Pires<br />
-                        Mirian Aparecida<br />
-                        Sonia Regina<br />
-                      </th>
-                      <th>
-                        <strong>Ebba Maguary</strong>
-                        <ul>
-                          <li>Todos os Estados</li>
-                        </ul>
-                      </th>
-        
-                      <th>
-                        <strong>Todas as Bandeiras</strong>
-                        <ul>
-                          <li>Todos os Estados</li>
-                        </ul>
-                        <strong>Fort Atacadista</strong>
-                        <ul>
-                          <li>Todos os Estados</li>
-                        </ul>
-                        <strong>Roldão</strong>
-                        <ul>
-                          <li>Todos os Estados</li>
-                        </ul>
-                      </th>
-                      <th><button class="btn btn-lg">...</button></th>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="table-footer border">
-                  <div class="d-flex justify-content-between">
-                    <label for="label" class="col-form-label">{{top10}} de {{top400}} resultados</label>
-        
-                    <div class="row g-3 align-items-center">
-                      <div class="col-auto">
-                        <label for="label" class="col-form-label">Você está na página</label>
-                      </div>
-                      <div class="col-auto d-flex">
-                        <select class="form-select" id="select" name="select">
-                          <option value="1">10000</option>
-                        </select>
-                        <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
-                        <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
-                      </div>
+          </div>
+          <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
+        </div>
+        <div class="body-section mt-4">
+          <div class="table-content">
+            <table class="table table-borderless">
+              <thead class="">
+                <tr class="border-bottom">
+                  <th>ATIVO<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                  <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                  <th>CÁLCULO COMISSÃO<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i>
+                  </th>
+                  <th>VENDEDORES<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                  <th>CLIENTES<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                  <th>BANDEIRAS<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                  <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs" (click)="clickDblClick()"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-bottom" *ngFor="item of items">
+                  <th>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
                     </div>
+                  </th>
+                  <th>16</th>
+                  <th>Segue Regra Padrão</th>
+                  <th>
+                    José Pires<br />
+                    Mirian Aparecida<br />
+                    Sonia Regina<br />
+                  </th>
+                  <th>
+                    <strong>Ebba Maguary</strong>
+                    <ul>
+                      <li>Todos os Estados</li>
+                    </ul>
+                  </th>
+
+                  <th>
+                    <strong>Todas as Bandeiras</strong>
+                    <ul>
+                      <li>Todos os Estados</li>
+                    </ul>
+                    <strong>Fort Atacadista</strong>
+                    <ul>
+                      <li>Todos os Estados</li>
+                    </ul>
+                    <strong>Roldão</strong>
+                    <ul>
+                      <li>Todos os Estados</li>
+                    </ul>
+                  </th>
+                  <th><button class="btn btn-lg">...</button></th>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-footer border">
+              <div class="d-flex justify-content-between">
+                <label for="label" class="col-form-label">{{top10}} de {{top400}} resultados</label>
+
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="label" class="col-form-label">Você está na página</label>
+                  </div>
+                  <div class="col-auto d-flex">
+                    <select class="form-select" id="select" name="select">
+                      <option value="1">10000</option>
+                    </select>
+                    <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
+                    <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
                   </div>
                 </div>
               </div>
@@ -127,4 +126,6 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </div>

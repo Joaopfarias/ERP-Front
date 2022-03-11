@@ -16,6 +16,9 @@ import { ParametrosESocialComponent } from './pages/parametros-e-social/parametr
 import { OrcamentosGMPComponent } from './pages/orcamentos-gmp/orcamentos-gmp.component';
 import { HeaderComponent } from './header/header.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

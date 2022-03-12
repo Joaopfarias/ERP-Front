@@ -19,6 +19,10 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatBadgeModule } from '@angular/material/badge';
+import { BoletoAvulsoComponent } from './pages/financeiro/boleto-avulso/boleto-avulso.component';
+import { OrcamentoComponent } from './pages/financeiro/orcamento/orcamento.component';
+import { ContasAPagarComponent } from './pages/financeiro/contas-a-pagar/contas-a-pagar.component';
+import { ContasAReceberComponent } from './pages/financeiro/contas-a-receber/contas-a-receber.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +39,18 @@ import { MatBadgeModule } from '@angular/material/badge';
     ParametrosESocialComponent,
     OrcamentosGMPComponent,
     HeaderComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    BoletoAvulsoComponent,
+    OrcamentoComponent,
+    ContasAPagarComponent,
+    ContasAReceberComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatBadgeModule
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

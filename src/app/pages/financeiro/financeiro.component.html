@@ -1,1 +1,83 @@
-<p>financeiro works!</p>
+<div class="d-block">
+  <!-- header -->
+  <app-header></app-header>
+  <div class="body">
+    <div class="bg">
+      <div class="header ms-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
+            <li class="breadcrumb-item" aria-current="page"><strong>Financeiro</strong></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title  bg ms-5 mt-3">
+        <span class="h4 fw-bolder">Financeiro</span>
+        <div class="subtitle d-flex">
+          <p class="mt-2 text-muted" style="font-size: 13px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley
+            of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including
+            versions of Lorem Ipsum
+          </p>
+          <div class="mx-5"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section border-bottom">
+
+      <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="orcamento-tab" data-bs-toggle="tab" data-bs-target="#orcamento"
+            type="button" role="tab" aria-controls="orcamento" aria-selected="true">Orçamento</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="solicitacoes-tab" data-bs-toggle="tab" data-bs-target="#solicitacoes"
+            type="button" role="tab" aria-controls="solicitacoes" aria-selected="false">Solicitações</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="faturamento-tab" data-bs-toggle="tab" data-bs-target="#faturamento" type="button"
+            role="tab" aria-controls="faturamento" aria-selected="false">Faturamento</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="boletos-tab" data-bs-toggle="tab" data-bs-target="#boletos" type="button"
+            role="tab" aria-controls="boletos" aria-selected="false">Boletos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="boleto-avulso-tab" data-bs-toggle="tab" data-bs-target="#boleto-avulso"
+            type="button" role="tab" aria-controls="boleto-avulso" aria-selected="false">Boleto Avulso</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="notas-fiscais-canceladas-tab" data-bs-toggle="tab"
+            data-bs-target="#notas-fiscais-canceladas" type="button" role="tab" aria-controls="notas-fiscais-canceladas"
+            aria-selected="false">Notas Fiscais Canceladas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contas-a-receber-tab" data-bs-toggle="tab" data-bs-target="#contas-a-receber"
+            type="button" role="tab" aria-controls="contas-a-receber" aria-selected="false">Contas a Receber</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contas-a-pagar-tab" data-bs-toggle="tab" data-bs-target="#contas-a-pagar"
+            type="button" role="tab" aria-controls="contas-a-pagar" aria-selected="false">Contas a Pagar</button>
+        </li>
+      </ul>
+      <div class="content-section mx-5">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="orcamento" role="tabpanel" aria-labelledby="orcamento-tab">
+            <app-orcamento></app-orcamento>
+          </div>
+          <div class="tab-pane fade" id="boleto-avulso" role="tabpanel" aria-labelledby="boleto-avulso-tab">...</div>
+          <div class="tab-pane fade" id="contas-a-receber" role="tabpanel" aria-labelledby="contas-a-receber-tab">...
+          </div>
+          <div class="tab-pane fade" id="contas-a-pagar" role="tabpanel" aria-labelledby="contas-a-pagar-tab">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

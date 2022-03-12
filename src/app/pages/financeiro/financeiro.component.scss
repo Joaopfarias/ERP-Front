@@ -1,0 +1,38 @@
+.bg {
+  background-color: #F3F5F9;
+}
+
+.bt-item {
+  &_active {
+    color: black !important;
+    font-weight: 600;
+    border-bottom: 4px solid #E21B23 !important;
+    padding-bottom: 5px;
+  }
+
+  &_inactive {
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #8d8d8d;
+  }
+}
+
+.t-gray {
+  color: #8d8d8d;
+  font-weight: 600;
+}
+.nav-link.active{
+  background-color: #F3F5F9;
+  border-bottom: 4px solid #E21B23 !important;
+    border: 0;
+    margin: 0px 10px;
+    margin-top: 10px;
+    color: black;
+}
+.nav-link{
+  background-color: #F3F5F9;
+    border: 0;
+    margin: 0px 10px;
+    margin-top: 10px;
+    color: black;
+}

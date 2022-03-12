@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-financeiro',
-  templateUrl: './financeiro.component.html',
-  styleUrls: ['./financeiro.component.scss']
+  selector: 'app-orcamento',
+  templateUrl: './orcamento.component.html',
+  styleUrls: ['./orcamento.component.scss']
 })
-export class FinanceiroComponent implements OnInit {
+export class OrcamentoComponent implements OnInit {
   items = [{}, {}, {}]
   isExpanded: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {

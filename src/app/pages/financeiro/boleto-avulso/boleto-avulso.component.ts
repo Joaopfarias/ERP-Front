@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./boleto-avulso.component.scss']
 })
 export class BoletoAvulsoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

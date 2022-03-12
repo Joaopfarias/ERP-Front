@@ -1,1 +1,69 @@
-<p>boleto-avulso works!</p>
+<div class="header-section">
+  <h2 class="mt-5 fw-bolder">Banco/Agencia onde o pagamento do boleto será depositado*</h2>
+  <div class="d-flex">
+    <div class="col-md-5 align-self-end">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Banco/agência</option>
+        <option value="1">selecione</option>
+        <option value="2">selecione</option>
+        <option value="3">selecione</option>
+      </select>
+    </div>
+    <div class="col-md d-flex">
+      <input class="form-control ms-2" type="text" placeholder="Emissão de Boleto">
+      <input class="form-control mx-2" type="text" placeholder="Vencimento">
+      <input class="form-control me-0" type="text" placeholder="Valor do Boleto">
+    </div>
+  </div>
+</div>
+<div class="body-section my-4">
+  <h2 class="fw-bolder mb-0">Dados do Pagador</h2>
+  <h4 class="text-muted"><strong>Cliente que será o pagador do boleto</strong>(Será carregado os dados do cliente nos
+    campos abaixo)</h4>
+  <div class="">
+    <form action="">
+      <div class="">
+        <div class="col-md-12 align-self-end">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Selecione o Cliente</option>
+            <option value="1">selecione</option>
+            <option value="2">selecione</option>
+            <option value="3">selecione</option>
+          </select>
+        </div>
+      </div>
+      <div class="my-2">
+        <div class="row">
+          <div class="col-md-3"><input class="form-control" type="text" placeholder="Tipo de Pessoa"></div>
+          <div class="col-md-4"><input class="form-control" type="text" placeholder="Nome ou razão social"></div>
+          <div class="col-md-5"><input class="form-control" type="text" placeholder="CPF ou CNPJ"></div>
+        </div>
+      </div>
+      <div class="my-2">
+        <div class="row">
+          <div class="col-md-5"><input class="form-control" type="text" placeholder="Endereço"></div>
+          <div class="col-md-2"><input class="form-control" type="text" placeholder="Numero"></div>
+          <div class="col-md-5"><input class="form-control" type="text" placeholder="Bairro"></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-3"><input class="form-control" type="text" placeholder="CEP"></div>
+          <div class="col-md-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>UF</option>
+              <option value="1">selecione</option>
+              <option value="2">selecione</option>
+              <option value="3">selecione</option>
+            </select>
+          </div>
+          <div class="col-md-7"><input class="form-control" type="text" placeholder="Cidade"></div>
+        </div>
+      </div>
+    </form>
+    <div class="my-3">
+      <button type="button" class="btn rounded-3 text-white btn-info px-4 me-auto">Gerar Boleto</button>
+      <button type="button" class="btn btn-outline-danger mx-2">Limpar Formulário</button>
+    </div>
+  </div>
+</div>

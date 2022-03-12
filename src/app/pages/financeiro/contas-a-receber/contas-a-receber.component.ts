@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contas-a-receber.component.scss']
 })
 export class ContasAReceberComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

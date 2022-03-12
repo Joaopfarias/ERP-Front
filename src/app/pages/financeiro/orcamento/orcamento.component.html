@@ -21,7 +21,7 @@
                 <option value="3">selecione</option>
               </select>
             </div>
-            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
+            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Exportar</button>
           </div>
           <div class="body-section mt-4">
             <div class="table-content">
@@ -40,11 +40,11 @@
                 <tbody>
                   <tr class="border-bottom" *ngFor="item of items" (click)="expandCell(true)">
                     <th>7138</th>
-                    <th>ABASTECER PROMO EIRELI</th>
+                    <th><span class="text-dark">ABASTECER PROMO EIRELI</span></th>
                     <th>3S BERRINI ALIMENTAÇÃO</th>
                     <th>Atendimento em Lojas</th>
                     <th>ALESSANDRA ANDREOZZI</th>
-                    <th>Realizado</th>
+                    <th style="padding-top: 15px;"><span class="status-item">Realizado</span></th>
                     <th><button class="btn btn-lg">...</button></th>
                   </tr>
                 </tbody>

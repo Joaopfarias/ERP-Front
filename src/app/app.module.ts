@@ -23,6 +23,8 @@ import { BoletoAvulsoComponent } from './pages/financeiro/boleto-avulso/boleto-a
 import { OrcamentoComponent } from './pages/financeiro/orcamento/orcamento.component';
 import { ContasAPagarComponent } from './pages/financeiro/contas-a-pagar/contas-a-pagar.component';
 import { ContasAReceberComponent } from './pages/financeiro/contas-a-receber/contas-a-receber.component';
+import { CnabContasAReceberComponent } from './pages/financeiro/contas-a-receber/cnab-contas-a-receber/cnab-contas-a-receber.component';
+import { ExtratoBancarioComponent } from './pages/financeiro/contas-a-receber/extrato-bancario/extrato-bancario.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ContasAReceberComponent } from './pages/financeiro/contas-a-receber/con
     BoletoAvulsoComponent,
     OrcamentoComponent,
     ContasAPagarComponent,
-    ContasAReceberComponent
+    ContasAReceberComponent,
+    CnabContasAReceberComponent,
+    ExtratoBancarioComponent
   ],
   imports: [
     BrowserModule,

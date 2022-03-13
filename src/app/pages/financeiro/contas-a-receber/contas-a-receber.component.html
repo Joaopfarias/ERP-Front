@@ -1,45 +1,22 @@
 <div class="header-section">
-    <div class="mt-5">
-      <button type="button" class="btn rounded-3 text-white btn-info px-4 me-2">CNAB - Contas a Receber</button>
-      <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2">Extrato Bancário</button>
+  <div class="mt-5" style="width: 43%;">
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-link active me-2" aria-current="page" id="cnab-contas-a-receber-tab" data-bs-toggle="tab"
+        data-bs-target="#cnab-contas-a-receber" type="button" role="tab" aria-controls="cnab-contas-a-receber"
+        aria-selected="true">CNAB - Contas a Receber</a>
+      <a class="nav-link mx-2" id="extrato-bancario-tab" data-bs-toggle="tab" data-bs-target="#extrato-bancario"
+        type="button" role="tab" aria-controls="extrato-bancario" aria-selected="true">Extrato Bancário</a>
+    </nav>
+  </div>
+</div>
+<div class="body-section my-4">
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="cnab-contas-a-receber" role="tabpanel"
+      aria-labelledby="cnab-contas-a-receber-tab">
+      <app-cnab-contas-a-receber></app-cnab-contas-a-receber>
+    </div>
+    <div class="tab-pane fade" id="extrato-bancario" role="tabpanel" aria-labelledby="extrato-bancario-tab">
+      <app-extrato-bancario></app-extrato-bancario>
     </div>
   </div>
-  <div class="body-section my-4">
-    <h2 class="fw-bolder mb-0">CNAB - Importação de contas a receber</h2>
-    <h5 class=" text-muted">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley
-      of type and scrambled
-      it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets
-      containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-      including
-      versions of Lorem Ipsum</h5>
-    <div class="mt-4">
-      <form action="">
-        <div class="row my-2">
-          <div class="col-md-6">
-            <label for="exampleInputEmail1">O Arquivo contem pagamentos da empresa: *</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Selecione uma Empresa">
-          </div>
-          <div class="col-md-6">
-            <label for="exampleInputEmail1">Banco/Conta que foi usada para gerar os boletos: *</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Selecione um Banco">
-          </div>
-        </div>
-        
-        <div class="row my-2">
-          <div class="col-md-6">
-            <label for="exampleInputEmail1">Arquivo CNAB: *</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Anexar Arquivo">
-          </div>
-        </div>
-      </form>
-      <div class="my-3">
-        <button type="button" class="btn rounded-3 text-white btn-info px-4 me-auto">Enviar Arquivo</button>
-      </div>
-    </div>
-  </div>
-  
+</div>

@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RelatoriosComponent implements OnInit {
 
+  items = [{}, {}, {}]
+
+  isActive: string = 'inactive';
+  tabs = []
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  changeTab(data: boolean) {
+
+    this.tabs = []
+    this.isActive = 'active'
   }
 
 }

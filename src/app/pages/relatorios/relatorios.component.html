@@ -86,30 +86,35 @@
             <table class="table table-borderless">
               <thead class="">
                 <tr class="border-bottom">
-                  <th>ATIVO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>NOME<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>SALÁRIO BASE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>ADICIONAL NOTURNO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>PERICULOSIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>INSALUBRIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+                  <th>COD<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+                  <th>REDE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+                  <th>BANDEIRA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+                  <th>NOME FANTASIA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+                  <th>RAZÃO SOCIAL<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="border-bottom" *ngFor="let item of items">
-                  <th>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+              <tbody *ngFor="let item of items; let i = index">
+                <tr class="border-bottom"  (click)="expandCell(i)">
+                  <th>7138</th>
+                  <th>2 IRMÃOS</th>
+                  <th>2 IRMÃOS</th>
+                  <th>2 IRMÃOS - DOURADOS - JD BRASILIA</th>
+                  <th>L.R. SUPERMARCADOS LTDA</th>
+                </tr>
+                <tr>
+                  <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+                    <div class="d-flex justify-content-evenly">
+                      <div class="">
+                        <div class="">
+                          <span class="text-muted"><strong>ENDEREÇO:</strong> Rua Cezário Domingues Perez, 6520, Vila Cuiabá, Dourados, CEP 79841070</span>
+                        </div><br/>
+                        <div class="d-flex justify-content-between">
+                          <span class="text-muted"><strong>LATITUDE:</strong> -22.2266299</span>
+                          <span class="text-muted"><strong>LATITUDE:</strong> -54.7651918</span>
+                        </div>
+                      </div>
                     </div>
-                  </th>
-                  <th>15</th>
-                  <th>Ajudante Geral</th>
-                  <th>R$ 57,00</th>
-                  <th>Não</th>
-                  <th>Não</th>
-                  <th>Não</th>
-                  <th><button class="btn btn-lg">...</button></th>
+                  </td>
                 </tr>
               </tbody>
             </table>

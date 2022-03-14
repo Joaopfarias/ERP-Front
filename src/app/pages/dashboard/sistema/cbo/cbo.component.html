@@ -24,12 +24,12 @@
             <th>COMPÔE PROPOSTA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
             <th>ADICIONAL NOTURNO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
             <th>PERICULOSIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-            <th>ISALUBRIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>INSALUBRIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
             <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="border-bottom" *ngFor="let item of items">
+        <tbody *ngFor="let item of items; let i = index">
+          <tr class="border-bottom" (click)="expandCell(i)">
             <th>42</th>
             <th>AJUDANTE DE LOJA</th>
             <th>R$ 99,999,00</th>
@@ -38,6 +38,24 @@
             <th>NÃO</th>
             <th>NÃO</th>
             <th><button class="btn btn-lg">...</button></th>
+          </tr>
+          <tr>
+            <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+              <div class="d-flex justify-content-evenly">
+                <div class="">
+                  <span class="text-muted"><strong>VT POR DIA:</strong> R$5,55</span><br/>
+                  <span class="text-muted"><strong>VR POR DIA:</strong> R$ 14,50</span>
+                </div>
+                <div class="">
+                  <span class="text-muted"><strong>DESCONTO VT:</strong> 10%</span><br/>
+                  <span class="text-muted"><strong>DESCONTO VR:</strong> 5%</span>
+                </div>
+                <div class="">
+                  <span class="text-muted"><strong>JORNADA VT: </strong> GUARULHOS-OSASCO/SP</span><br/>
+                  <span class="text-muted"><strong>JORNADA VR: </strong> GUARULHOS-OSASCO/SP</span>
+                </div>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>

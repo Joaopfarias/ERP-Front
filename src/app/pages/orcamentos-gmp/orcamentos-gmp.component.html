@@ -75,8 +75,8 @@
                   <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="border-bottom" *ngFor="let item of items">
+              <tbody *ngFor="let item of items; let i = index">
+                <tr class="border-bottom" (click)="expandCell(i)">
                   <th>
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
@@ -89,6 +89,28 @@
                   <th>Não</th>
                   <th>Não</th>
                   <th><button class="btn btn-lg">...</button></th>
+                </tr>
+                <tr>
+                  <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="">
+                          <span class="text-muted"><strong>VT POR DIA:</strong> R$ 7,65</span><br />
+                          <span class="text-muted"><strong>JORNADA VR:</strong> 22</span>
+                        </div><br />
+                        <div class="">
+                          <span class="text-muted"><strong>% DESCONTO VT:</strong> 6,00%</span>
+                        </div>
+                        <div class="">
+                          <span class="text-muted"><strong>JORNADA VT:</strong> 22</span>
+                        </div>
+                        <div class="">
+                          <span class="text-muted"><strong>VR POR DIA:</strong> R$ 20,00</span>
+                        </div>
+                        <div class="">
+                          <span class="text-muted"><strong>% DESCONTO VR:</strong> 20%</span>
+                        </div>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>

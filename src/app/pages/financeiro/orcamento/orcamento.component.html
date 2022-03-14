@@ -37,8 +37,8 @@
                     <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr class="border-bottom" *ngFor="let item of items" (click)="expandCell(true)">
+                <tbody *ngFor="let item of items; let i = index">
+                  <tr class="border-bottom"  (click)="expandCell(i)">
                     <th>7138</th>
                     <th><span class="text-dark">ABASTECER PROMO EIRELI</span></th>
                     <th>3S BERRINI ALIMENTAÇÃO</th>
@@ -46,6 +46,31 @@
                     <th>ALESSANDRA ANDREOZZI</th>
                     <th style="padding-top: 15px;"><span class="status-item">Realizado</span></th>
                     <th><button class="btn btn-lg">...</button></th>
+                  </tr>
+                  <tr>
+                    <td colspan=7 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+                      <div class="d-flex justify-content-evenly">
+                          <div class="">
+                            <span class="text-muted"><strong>ORÇ. PAI:</strong></span><br />
+                            <span class="text-muted"><strong>VENCIMENTO:</strong> 18/12/2022</span>
+                          </div><br />
+                          <div class="">
+                            <span class="text-muted"><strong>FATURAMENTO:</strong> 19/12/2022</span><br />
+                            <span class="text-muted"><strong>CALCULE 13º:</strong> 5%</span>
+                          </div>
+                          <div class="">
+                            <span class="text-muted"><strong>COBRA EPI:</strong> NÃO</span><br />
+                            <span class="text-muted"><strong>LOJAS:</strong> 105</span>
+                          </div>
+                          <div class="">
+                            <span class="text-muted"><strong>TOTAL PREV:</strong> 80.157,00</span><br />
+                            <span class="text-muted"><strong>DATA STATUS:</strong> 10/05/2021</span>
+                          </div>
+                          <div class="">
+                            <span class="text-muted"><strong>INCLUSÃO:</strong> 10/05/2021</span>
+                          </div>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>

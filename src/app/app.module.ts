@@ -36,6 +36,7 @@ import { CommonModule } from '@angular/common';
 import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
 import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
 import { TarefasComponent } from './pages/dashboard/gerais/tarefas/tarefas.component';
+import { MotivosDescontoComponent } from './pages/dashboard/dashboard-financeiro/motivos-desconto/motivos-desconto.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { TarefasComponent } from './pages/dashboard/gerais/tarefas/tarefas.compo
     VinculosComponent,
     GeraisComponent,
     DashboardFinanceiroComponent,
-    TarefasComponent
+    TarefasComponent,
+    MotivosDescontoComponent
   ],
   imports: [
     BrowserModule,

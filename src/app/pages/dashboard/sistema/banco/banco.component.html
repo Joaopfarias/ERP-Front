@@ -1,1 +1,67 @@
-<p>banco works!</p>
+<div class="content-section">
+  <div class="header-section d-flex">
+    <div class="search-box col-md-4 me-3">
+      <div class="input-group mt-4 border rounded-3 p-1 bg-white">
+        <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
+          class="form-control bg-none border-0">
+        <div class="input-group-append border-0">
+          <button id="button-addon3" type="button" class="btn btn-link text-dark">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
+  </div>
+  <div class="body-section mt-4">
+    <div class="table-content">
+      <table class="table table-borderless">
+        <thead class="">
+          <tr class="border-bottom">
+            <th>COD BANCO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>RAZÃO SOCIAL<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>Nº AGENCIA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>Nº CONTA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>COD DE TRANSMISSÃO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>CONDENSADO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+            <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of items; let i = index">
+          <tr class="border-bottom" (click)="expandCell('sim')">
+            <th>341</th>
+            <th>HELP SERVICES S E L R ZELADORI - ITAÚ</th>
+            <th>3145</th>
+            <th>99800-5</th>
+            <th> </th>
+            <th>341|3145|99800-5</th>
+            <th><button class="btn btn-lg">...</button></th>
+          </tr>
+          <tr>
+            <td colspan=7>
+              <div style="width:100%;border:1px solid red;height:30px;">Test Div</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-footer border">
+        <div class="d-flex justify-content-between">
+          <label for="label" class="col-form-label">10 de 400 resultados</label>
+
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="label" class="col-form-label">Você está na página</label>
+            </div>
+            <div class="col-auto d-flex">
+              <select class="form-select" id="select" name="select">
+                <option value="1">10000</option>
+              </select>
+              <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
+              <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

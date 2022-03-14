@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vinculos.component.scss']
 })
 export class VinculosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

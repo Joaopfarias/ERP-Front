@@ -32,6 +32,7 @@ import { DepartamentosComponent } from './pages/dashboard/sistema/departamentos/
 import { CboComponent } from './pages/dashboard/sistema/cbo/cbo.component';
 import { BancoComponent } from './pages/dashboard/sistema/banco/banco.component';
 import { VinculosComponent } from './pages/dashboard/sistema/vinculos/vinculos.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { VinculosComponent } from './pages/dashboard/sistema/vinculos/vinculos.c
     BrowserAnimationsModule,
     MatTabsModule,
     MatBadgeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

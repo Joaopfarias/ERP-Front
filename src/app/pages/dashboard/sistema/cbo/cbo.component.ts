@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cbo.component.scss']
 })
 export class CboComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

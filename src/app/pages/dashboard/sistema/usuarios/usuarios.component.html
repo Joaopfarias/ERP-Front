@@ -26,8 +26,8 @@
             <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="border-bottom" *ngFor="let item of items">
+        <tbody *ngFor="let item of items">
+          <tr class="border-bottom">
             <th>
               <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle mx-1">
               <span class="fw-500 mx-2 text-dark" style="font-weight:500;">ALEXANDRE LEITE</span>

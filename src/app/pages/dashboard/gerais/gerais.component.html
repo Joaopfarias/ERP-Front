@@ -1,0 +1,75 @@
+<div class="d-block">
+  <!-- header -->
+  <app-header></app-header>
+  <div class="body">
+    <div class="bg">
+      <div class="header ms-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
+            <li class="breadcrumb-item active">Cadastros</li>
+            <li class="breadcrumb-item" aria-current="page"><strong>Gerais</strong></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title  bg ms-5 mt-3">
+        <span class="h4 fw-bolder">Gerais</span>
+        <div class="subtitle d-flex">
+          <p class="mt-2 text-muted" style="font-size: 13px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley
+            of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including
+            versions of Lorem Ipsum
+          </p>
+          <div class="mx-5"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section border-bottom">
+      <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link active" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios"
+            type="button" role="tab" aria-controls="usuarios" aria-selected="true"><span>Tarefas</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
+            role="tab" aria-controls="empresas" aria-selected="false"><span>Segmentos de produtos</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="filial-tab" data-bs-toggle="tab" data-bs-target="#filial" type="button"
+            role="tab" aria-controls="filial" aria-selected="false"><span>Rede</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="departamentos-tab" data-bs-toggle="tab" data-bs-target="#departamentos"
+            type="button" role="tab" aria-controls="departamentos"
+            aria-selected="false"><span>Bandeira</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="cbo-tab" data-bs-toggle="tab" data-bs-target="#cbo" type="button" role="tab"
+            aria-controls="cbo" aria-selected="false"><span>Estabelecimento</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="banco-tab" data-bs-toggle="tab" data-bs-target="#banco" type="button" role="tab"
+            aria-controls="banco" aria-selected="false"><span>Cliente</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="sindicato-tab" data-bs-toggle="tab" data-bs-target="#sindicato" type="button"
+            role="tab" aria-controls="sindicato" aria-selected="false"><span>Fornecedor</span></button>
+        </li>
+      </ul>
+      <div class="content-section mx-5">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="usuarios" role="tabpanel" aria-labelledby="usuarios-tab">
+            <app-tarefas></app-tarefas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

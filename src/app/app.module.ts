@@ -33,6 +33,9 @@ import { CboComponent } from './pages/dashboard/sistema/cbo/cbo.component';
 import { BancoComponent } from './pages/dashboard/sistema/banco/banco.component';
 import { VinculosComponent } from './pages/dashboard/sistema/vinculos/vinculos.component';
 import { CommonModule } from '@angular/common';
+import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
+import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
+import { TarefasComponent } from './pages/dashboard/gerais/tarefas/tarefas.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ import { CommonModule } from '@angular/common';
     DepartamentosComponent,
     CboComponent,
     BancoComponent,
-    VinculosComponent
+    VinculosComponent,
+    GeraisComponent,
+    DashboardFinanceiroComponent,
+    TarefasComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ComissaoComponent } from './pages/comissao/comissao.component';
+import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
 import { SistemaComponent } from './pages/dashboard/sistema/sistema.component';
 import { ESocialComponent } from './pages/e-social/e-social.component';
 import { FinanceiroComponent } from './pages/financeiro/financeiro.component';
@@ -73,8 +75,16 @@ const routes: Routes = [
     component: SidemenuComponent
   },
   {
-    path: 'sistema',
+    path: 'dashboard/sistema',
     component: SistemaComponent
+  },
+  {
+    path: 'dashboard/gerais',
+    component: GeraisComponent
+  }, 
+  {
+    path: 'dashboard/financeiro',
+    component: DashboardFinanceiroComponent
   },
 ];
 

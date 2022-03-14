@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ComissaoComponent } from './pages/comissao/comissao.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SistemaComponent } from './pages/dashboard/sistema/sistema.component';
 import { ESocialComponent } from './pages/e-social/e-social.component';
 import { FinanceiroComponent } from './pages/financeiro/financeiro.component';
 import { OrcamentosGMPComponent } from './pages/orcamentos-gmp/orcamentos-gmp.component';
@@ -70,6 +71,10 @@ const routes: Routes = [
   {
     path: 'sidemenu',
     component: SidemenuComponent
+  },
+  {
+    path: 'sistema',
+    component: SistemaComponent
   },
 ];
 

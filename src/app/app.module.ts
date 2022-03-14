@@ -25,6 +25,13 @@ import { ContasAPagarComponent } from './pages/financeiro/contas-a-pagar/contas-
 import { ContasAReceberComponent } from './pages/financeiro/contas-a-receber/contas-a-receber.component';
 import { CnabContasAReceberComponent } from './pages/financeiro/contas-a-receber/cnab-contas-a-receber/cnab-contas-a-receber.component';
 import { ExtratoBancarioComponent } from './pages/financeiro/contas-a-receber/extrato-bancario/extrato-bancario.component';
+import { SistemaComponent } from './pages/dashboard/sistema/sistema.component';
+import { UsuariosComponent } from './pages/dashboard/sistema/usuarios/usuarios.component';
+import { EmpresasComponent } from './pages/dashboard/sistema/empresas/empresas.component';
+import { DepartamentosComponent } from './pages/dashboard/sistema/departamentos/departamentos.component';
+import { CboComponent } from './pages/dashboard/sistema/cbo/cbo.component';
+import { BancoComponent } from './pages/dashboard/sistema/banco/banco.component';
+import { VinculosComponent } from './pages/dashboard/sistema/vinculos/vinculos.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +54,14 @@ import { ExtratoBancarioComponent } from './pages/financeiro/contas-a-receber/ex
     ContasAPagarComponent,
     ContasAReceberComponent,
     CnabContasAReceberComponent,
-    ExtratoBancarioComponent
+    ExtratoBancarioComponent,
+    SistemaComponent,
+    UsuariosComponent,
+    EmpresasComponent,
+    DepartamentosComponent,
+    CboComponent,
+    BancoComponent,
+    VinculosComponent
   ],
   imports: [
     BrowserModule,

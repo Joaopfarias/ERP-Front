@@ -28,7 +28,7 @@
           </tr>
         </thead>
         <tbody *ngFor="let item of items; let i = index">
-          <tr class="border-bottom" (click)="expandCell('sim')">
+          <tr class="border-bottom" (click)="expandCell(i)">
             <th>341</th>
             <th>HELP SERVICES S E L R ZELADORI - ITAÚ</th>
             <th>3145</th>
@@ -38,7 +38,7 @@
             <th><button class="btn btn-lg">...</button></th>
           </tr>
           <tr>
-            <td colspan=7>
+            <td colspan=7 *ngIf="item.show == true">
               <div style="width:100%;border:1px solid red;height:30px;">Test Div</div>
             </td>
           </tr>

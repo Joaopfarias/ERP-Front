@@ -1,90 +1,106 @@
 <div class="header-section">
-    <div class="mt-5">
-      <button type="button" class="btn rounded-3 text-white btn-info px-4 me-2">Lançamento bancário</button>
-      <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2"><strong>Importar</strong></button>
-      <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2"><strong>Aprovação</strong></button>
-      <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2"><strong>Pagamento</strong></button>
-      <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2"><strong>CNAB - Contas a pagar</strong></button>
-    </div>
+  <div class="mt-5" style="width: 82%;">
+    <!-- abas -->
+    <nav class="nav nav-pills nav-justified">
+      <!-- Lançamento bancário -->
+      <a class="nav-link active me-2" aria-current="page" id="cnab-contas-a-receber-tab" data-bs-toggle="tab"
+        data-bs-target="#cnab-contas-a-receber" type="button" role="tab" aria-controls="cnab-contas-a-receber"
+        aria-selected="true">Lançamento bancário</a>
+        <!-- Importar -->
+      <a class="nav-link mx-2" id="extrato-bancario-tab" data-bs-toggle="tab" data-bs-target="#extrato-bancario"
+        type="button" role="tab" aria-controls="extrato-bancario" aria-selected="true">Importar</a>
+        <!-- Aprovação -->
+      <a class="nav-link mx-2" id="extrato-bancario-tab" data-bs-toggle="tab" data-bs-target="#extrato-bancario"
+        type="button" role="tab" aria-controls="extrato-bancario" aria-selected="true">Aprovação</a>
+        <!-- Pagamento -->
+      <a class="nav-link mx-2" id="extrato-bancario-tab" data-bs-toggle="tab" data-bs-target="#extrato-bancario"
+        type="button" role="tab" aria-controls="extrato-bancario" aria-selected="true">Pagamento</a>
+        <!-- CNAB - Contas a pagar -->
+      <a class="nav-link mx-2" id="extrato-bancario-tab" data-bs-toggle="tab" data-bs-target="#extrato-bancario"
+        type="button" role="tab" aria-controls="extrato-bancario" aria-selected="true">CNAB - Contas a
+        pagar</a>
+    </nav>
   </div>
-  <div class="body-section my-4">
-    <h2 class="fw-bolder mb-0">Lançamento bancário</h2>
-    <h5 class=" text-muted">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley
-      of type and scrambled
-      it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets
-      containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-      including
-      versions of Lorem Ipsum</h5>
-    <div class="mt-4">
-      <form action="">
-        <div class="row my-2">
-            <div class="col-md-12 align-self-end">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Banco</option>
-                <option value="1">selecione</option>
-                <option value="2">selecione</option>
-                <option value="3">selecione</option>
-              </select>
-            </div>
+</div>
+<div class="body-section my-4">
+  <h2 class="fw-bolder mb-0">Lançamento bancário</h2>
+  <h5 class=" text-muted">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+    galley
+    of type and scrambled
+    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets
+    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+    including
+    versions of Lorem Ipsum</h5>
+  <div class="mt-4">
+    <form action="">
+      <div class="row my-2">
+        <div class="col-md-12 align-self-end">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Banco</option>
+            <option value="1">selecione</option>
+            <option value="2">selecione</option>
+            <option value="3">selecione</option>
+          </select>
         </div>
-        
-        <div class="row my-2">
-            <div class="col-md-12 align-self-end">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Empresa</option>
-                <option value="1">selecione</option>
-                <option value="2">selecione</option>
-                <option value="3">selecione</option>
-              </select>
-            </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-md-12 align-self-end">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Empresa</option>
+            <option value="1">selecione</option>
+            <option value="2">selecione</option>
+            <option value="3">selecione</option>
+          </select>
         </div>
-        <div class="row my-2">
-            
+      </div>
+      <div class="row my-2">
+
         <div class="col-md-6 align-self-end">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Fornecedor</option>
-              <option value="1">selecione</option>
-              <option value="2">selecione</option>
-              <option value="3">selecione</option>
-            </select>
-          </div>
-          <div class="col-md-6 align-self-end">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Cliente</option>
-              <option value="1">selecione</option>
-              <option value="2">selecione</option>
-              <option value="3">selecione</option>
-            </select>
-          </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Fornecedor</option>
+            <option value="1">selecione</option>
+            <option value="2">selecione</option>
+            <option value="3">selecione</option>
+          </select>
         </div>
-        <div class="row my-2">
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Lançamento"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Vencimento"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Recolhimento de Impostos"></div>
+        <div class="col-md-6 align-self-end">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Cliente</option>
+            <option value="1">selecione</option>
+            <option value="2">selecione</option>
+            <option value="3">selecione</option>
+          </select>
         </div>
-        <div class="row my-2">
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Número do Documento"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Nosso numero"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Lançamento nº"></div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Lançamento"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Vencimento"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Data do Recolhimento de Impostos">
         </div>
-        <div class="row my-2">
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Tipo de movimento"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Tipo de despesa/receita"></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Débito/crédito"></div>
-        </div>
-      </form>
-      <div class="my-3 d-flex justify-content-start">
-        <button type="button" class="btn rounded-3 text-white btn-info px-4 me-3">Pesquisar Lançamentos</button>
-        <div class="d-flex align-self-center">
-            <span class="mx-2 fs-5">Saldo Geral: <span style="color:#04d200; font-weight: 600;">R$ 2500,00/d</span></span>
-            <span class="mx-2 fs-5">Saldo Até Hoje: <span style="color:#04d200; font-weight: 600;">R$ 2500,00/d</span></span>
-        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Número do Documento"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Nosso numero"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Lançamento nº"></div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Tipo de movimento"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Tipo de despesa/receita"></div>
+        <div class="col-md-4"><input class="form-control" type="text" placeholder="Débito/crédito"></div>
+      </div>
+    </form>
+    <div class="my-3 d-flex justify-content-start">
+      <button type="button" class="btn rounded-3 text-white btn-info px-4 me-3">Pesquisar Lançamentos</button>
+      <div class="d-flex align-self-center">
+        <span class="mx-2 fs-5">Saldo Geral: <span style="color:#04d200; font-weight: 600;">R$ 2500,00/d</span></span>
+        <span class="mx-2 fs-5">Saldo Até Hoje: <span style="color:#04d200; font-weight: 600;">R$
+            2500,00/d</span></span>
       </div>
     </div>
   </div>
-  
+</div>

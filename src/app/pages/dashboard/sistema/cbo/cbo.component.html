@@ -1,5 +1,6 @@
 <div class="content-section">
   <div class="header-section d-flex">
+    <!-- input de pesquisa -->
     <div class="search-box col-md-4 me-3">
       <div class="input-group mt-4 border rounded-3 p-1 bg-white">
         <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
@@ -18,6 +19,7 @@
       <table class="table table-borderless">
         <thead class="">
           <tr class="border-bottom">
+            <!-- colunas -->
             <th>NUM<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
             <th>DESCRIÇÃO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
             <th>SALÁRIO BASE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
@@ -30,6 +32,7 @@
         </thead>
         <tbody *ngFor="let item of items; let i = index">
           <tr class="border-bottom" (click)="expandCell(i)">
+            <!-- linhas -->
             <th>42</th>
             <th>AJUDANTE DE LOJA</th>
             <th>R$ 99,999,00</th>
@@ -40,6 +43,7 @@
             <th><button class="btn btn-lg">...</button></th>
           </tr>
           <tr>
+            <!-- linhas expansiva -->
             <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
               <div class="d-flex justify-content-evenly">
                 <div class="">

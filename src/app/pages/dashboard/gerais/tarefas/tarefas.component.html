@@ -1,5 +1,6 @@
 <div class="content-section">
     <div class="header-section d-flex">
+      <!-- input de pesquisa -->
       <div class="search-box col-md-4 me-3">
         <div class="input-group mt-4 border rounded-3 p-1 bg-white">
           <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
@@ -16,6 +17,7 @@
     <div class="body-section mt-4">
       <div class="table-content">
         <table class="table table-borderless">
+          <!-- colunas -->
           <thead class="">
             <tr class="border-bottom">
               <th>ID <i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
@@ -26,6 +28,7 @@
             </tr>
           </thead>
           <tbody *ngFor="let item of items">
+            <!-- linhas -->
             <tr class="border-bottom">
               <th>
                 <span class="fw-500 mx-2 text-dark" style="font-weight:500;">27</span>

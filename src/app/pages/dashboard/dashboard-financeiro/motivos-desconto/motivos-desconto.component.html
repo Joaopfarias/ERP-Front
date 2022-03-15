@@ -1,8 +1,10 @@
       <div class="content-section mx-5">
 
         <div class="header-section d-block">
+          <!-- titulo -->
           <h2 class="fw-bolder mb-0 mt-4">Motivos para desconto/acréscimo</h2>
           <div class="d-flex">
+            <!-- input para pesquisa -->
             <div class="search-box col-md-4 me-3">
               <div class="input-group mt-4 border rounded-3 p-1 bg-white">
                 <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
@@ -20,6 +22,7 @@
         <div class="body-section mt-4">
           <div class="table-content">
             <table class="table table-borderless">
+              <!-- colunas -->
               <thead class="">
                 <tr class="border-bottom">
                   <th>ATIVAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
@@ -30,6 +33,7 @@
                 </tr>
               </thead>
               <tbody *ngFor="let item of items; let i = index">
+                <!-- linhas -->
                 <tr class="border-bottom">
                   <th>
                     <div class="form-check form-switch">
@@ -42,6 +46,7 @@
                   <th><button class="btn btn-lg">...</button></th>
                 </tr>
                 <tr>
+                  <!-- linha expansiva -->
                   <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
                     <div class="d-flex justify-content-evenly">
                       <div class="">

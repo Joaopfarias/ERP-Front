@@ -1,8 +1,10 @@
 <div class="d-block">
   <!-- header -->
   <app-header></app-header>
+  <!-- conteudo da página -->
   <div class="body">
     <div class="bg">
+      <!-- caminho da página -->
       <div class="header ms-5">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -12,6 +14,7 @@
           </ol>
         </nav>
       </div>
+      <!-- titulo e subtitulo -->
       <div class="title  bg ms-5 mt-3">
         <span class="h4 fw-bolder">Gerais</span>
         <div class="subtitle d-flex">
@@ -32,38 +35,47 @@
       </div>
     </div>
     <div class="section border-bottom">
+      <!-- Abas -->
       <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <!-- Tarefas -->
         <li class="nav-item ms-4" role="presentation">
           <button class="nav-link active" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios"
             type="button" role="tab" aria-controls="usuarios" aria-selected="true"><span>Tarefas</span></button>
         </li>
+        <!-- Segmentos de produtos -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
             role="tab" aria-controls="empresas" aria-selected="false"><span>Segmentos de produtos</span></button>
         </li>
+        <!-- Rede -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="filial-tab" data-bs-toggle="tab" data-bs-target="#filial" type="button"
             role="tab" aria-controls="filial" aria-selected="false"><span>Rede</span></button>
         </li>
+        <!-- Bandeira -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="departamentos-tab" data-bs-toggle="tab" data-bs-target="#departamentos"
             type="button" role="tab" aria-controls="departamentos"
             aria-selected="false"><span>Bandeira</span></button>
         </li>
+        <!-- Estabelecimento -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="cbo-tab" data-bs-toggle="tab" data-bs-target="#cbo" type="button" role="tab"
             aria-controls="cbo" aria-selected="false"><span>Estabelecimento</span></button>
         </li>
+        <!-- Cliente -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="banco-tab" data-bs-toggle="tab" data-bs-target="#banco" type="button" role="tab"
             aria-controls="banco" aria-selected="false"><span>Cliente</span></button>
         </li>
+        <!-- Fornecedor -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="sindicato-tab" data-bs-toggle="tab" data-bs-target="#sindicato" type="button"
             role="tab" aria-controls="sindicato" aria-selected="false"><span>Fornecedor</span></button>
         </li>
       </ul>
       <div class="content-section mx-5">
+        <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuarios" role="tabpanel" aria-labelledby="usuarios-tab">
             <app-tarefas></app-tarefas>

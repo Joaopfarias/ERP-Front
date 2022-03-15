@@ -32,110 +32,64 @@
     </div>
     <div class="section border-bottom">
       <div class="title-section d-inline-flex bg border-bottom col-md-12">
-        <div class="item ms-5 mt-4 bt-item_active">Estabelecimentos</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Clientes</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Plano de conta</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Centros de custo</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Lançamentos bancárioss</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Recolhimento de impostos</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Comissões previstas</div>
-        <div class="item ms-4 mt-4 bt-item_inactive">Mais<i class="bi bi-chevron-down mx-2"></i></div>
+        <!-- abas -->
+        <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+          <!-- Estabelecimentos -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="estabelecimentos-tab" data-bs-toggle="tab"
+              data-bs-target="#estabelecimentos" type="button" role="tab" aria-controls="estabelecimentos"
+              aria-selected="true"><span>Estabelecimentos</span></button>
+          </li>
+          <!-- Clientes -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cargos-tab" data-bs-toggle="tab" data-bs-target="#cargos" type="button"
+              role="tab" aria-controls="cargos" aria-selected="false"><span>Clientes</span></button>
+          </li>
+          <!-- Plano de conta -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="faturamento-tab" data-bs-toggle="tab" data-bs-target="#faturamento"
+              type="button" role="tab" aria-controls="faturamento" aria-selected="false"><span>Plano de
+                conta</span></button>
+          </li>
+          <!-- Centros de custo -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="boletos-tab" data-bs-toggle="tab" data-bs-target="#boletos" type="button"
+              role="tab" aria-controls="boletos" aria-selected="false"><span>Centros de custo</span></button>
+          </li>
+          <!-- Lançamentos bancários -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="boleto-avulso-tab" data-bs-toggle="tab" data-bs-target="#boleto-avulso"
+              type="button" role="tab" aria-controls="boleto-avulso" aria-selected="false"><span>Lançamentos
+                bancários</span></button>
+          </li>
+          <!-- Recolhimento de impostos -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="notas-fiscais-canceladas-tab" data-bs-toggle="tab"
+              data-bs-target="#notas-fiscais-canceladas" type="button" role="tab"
+              aria-controls="notas-fiscais-canceladas" aria-selected="false"><span>Recolhimento de
+                impostos</span></button>
+          </li>
+          <!-- Comissões previstas -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contas-a-receber-tab" data-bs-toggle="tab" data-bs-target="#contas-a-receber"
+              type="button" role="tab" aria-controls="contas-a-receber" aria-selected="false"><span>Comissões
+                previstas</span></button>
+          </li>
+          <!-- Mais -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contas-a-pagar-tab" data-bs-toggle="tab" data-bs-target="#contas-a-pagar"
+              type="button" role="tab" aria-controls="contas-a-pagar" aria-selected="false"><span>Mais<i
+                  class="bi bi-chevron-down mx-2"></i></span></button>
+          </li>
+        </ul>
       </div>
       <div class="content-section mx-5">
 
-        <div class="header-section d-block">
-          <div class="border-bottom mt-3 py-3 col-md-10">
-            <form action="">
-              <div class="row my-4">
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Redes">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Bandeiras">
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Nome ou CNPJ do Estabelecimento/Loja">
-                </div>
-              </div>
-              <button type="button" class="btn rounded-3 text-white btn-info px-4 me-2">Pesquisar</button>
-              <button type="button" class="btn rounded-3 text-dark btn-outline-light px-4 mx-2" style="background-color: #f3f5f9;"><strong>Exportar Excel</strong></button>
-            </form>
-          </div>
-          <div class="d-flex">
-            <div class="search-box col-md-4 me-3">
-              <div class="input-group mt-4 border rounded-3 p-1 bg-white">
-                <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
-                  class="form-control bg-none border-0">
-                <div class="input-group-append border-0">
-                  <button id="button-addon3" type="button" class="btn btn-link text-dark">
-                    <i class="bi bi-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
-          </div>
-        </div>
-        <div class="body-section mt-4">
-          <div class="table-content">
-            <table class="table table-borderless">
-              <thead class="">
-                <tr class="border-bottom">
-                  <th>COD<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>REDE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>BANDEIRA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>NOME FANTASIA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  <th>RAZÃO SOCIAL<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                </tr>
-              </thead>
-              <tbody *ngFor="let item of items; let i = index">
-                <tr class="border-bottom"  (click)="expandCell(i)">
-                  <th>7138</th>
-                  <th>2 IRMÃOS</th>
-                  <th>2 IRMÃOS</th>
-                  <th>2 IRMÃOS - DOURADOS - JD BRASILIA</th>
-                  <th>L.R. SUPERMARCADOS LTDA</th>
-                </tr>
-                <tr>
-                  <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
-                    <div class="d-flex justify-content-evenly">
-                      <div class="">
-                        <div class="">
-                          <span class="text-muted"><strong>ENDEREÇO:</strong> Rua Cezário Domingues Perez, 6520, Vila Cuiabá, Dourados, CEP 79841070</span>
-                        </div><br/>
-                        <div class="d-flex justify-content-between">
-                          <span class="text-muted"><strong>LATITUDE:</strong> -22.2266299</span>
-                          <span class="text-muted"><strong>LATITUDE:</strong> -54.7651918</span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="table-footer border">
-              <div class="d-flex justify-content-between">
-                <label for="label" class="col-form-label">10 de 400 resultados</label>
-
-                <div class="row g-3 align-items-center">
-                  <div class="col-auto">
-                    <label for="label" class="col-form-label">Você está na página</label>
-                  </div>
-                  <div class="col-auto d-flex">
-                    <select class="form-select" id="select" name="select">
-                      <option value="1">10000</option>
-                    </select>
-                    <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
-                    <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- conteudo das abas -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="estabelecimentos" role="tabpanel"
+            aria-labelledby="estabelecimentos-tab">
+            <app-estabelecimentos></app-estabelecimentos>
           </div>
         </div>
       </div>

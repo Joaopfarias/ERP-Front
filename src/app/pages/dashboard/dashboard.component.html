@@ -27,27 +27,33 @@
       </div>
     </div>
   </div>
-  <!-- body -->
+  <!-- conteudo da página -->
   <div class="body bg border-bottom">
+    <!-- atalhos -->
     <div class="menu mx-5 d-flex flex-column">
       <h4 class="text-white"><i class="bi bi-journal-text mx-1"></i>Cadastros</h4>
       <div class="d-flex justify-content-between">
+        <!-- Sistema -->
         <div class="dash-item" role="button" routerLink="/dashboard/sistema">
           <img src="../../../assets/img/book.png" alt="" style="width: 75px; height: 75px;"><br />
           <label>Sistema</label>
         </div>
+        <!-- Gerais -->
         <div class="dash-item" role="button" routerLink="/dashboard/gerais">
           <img src="../../../assets/img/to-do-list.png" alt="" style="width: 75px; height: 75px;"><br />
           <label>Gerais</label>
         </div>
+        <!-- Keyuser -->
         <div class="dash-item" role="button" routerLink="/">
           <img src="../../../assets/img/user.png" alt="" style="width: 75px; height: 75px;"><br />
           <label>Keyuser</label>
         </div>
+        <!-- Funcionarios -->
         <div class="dash-item" role="button" routerLink="/">
           <img src="../../../assets/img/archive.png" alt="" style="width: 75px; height: 75px;"><br />
           <label>Funcionarios</label>
         </div>
+        <!-- Financeiro -->
         <div class="dash-item" role="button" routerLink="/dashboard/financeiro">
           <img src="../../../assets/img/portfolio.png" alt="" style="width: 75px; height: 75px;"><br />
           <label>Financeiro</label>
@@ -55,10 +61,12 @@
       </div>
     </div>
     <div class="section bg2 px-5">
+      <!-- graficos -->
       <div class="charts d-flex flex-column">
         <h4 class="m-t"><i class="bi bi-graph-up-arrow text-danger"></i><strong class="mx-1">Relatório Geral</strong>
         </h4>
         <div class="d-flex mb-5">
+          <!-- grafico linha -->
           <div class="chart-item border d-flex flex-column col-md-7 me-2">
             <div class="header-chart d-flex justify-content-between">
               <div class="col-md-6">
@@ -80,6 +88,7 @@
             </div>
             <canvas id="lineChart" class="my-auto"></canvas>
           </div>
+          <!-- grafico pizza -->
           <div class="chart-item border col-md ms-2">
             <div class="header-chart d-flex justify-content-between">
               <div class="col-md-6">

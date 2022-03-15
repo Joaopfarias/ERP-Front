@@ -37,6 +37,10 @@ import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
 import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
 import { TarefasComponent } from './pages/dashboard/gerais/tarefas/tarefas.component';
 import { MotivosDescontoComponent } from './pages/dashboard/dashboard-financeiro/motivos-desconto/motivos-desconto.component';
+import { CargosComponent } from './pages/orcamentos-gmp/cargos/cargos.component';
+import { EstabelecimentosComponent } from './pages/relatorios/estabelecimentos/estabelecimentos.component';
+import { NaturezaComponent } from './pages/repositorios/natureza/natureza.component';
+import { ParametrizacaoComponent } from './pages/comissao/parametrizacao/parametrizacao.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +74,11 @@ import { MotivosDescontoComponent } from './pages/dashboard/dashboard-financeiro
     GeraisComponent,
     DashboardFinanceiroComponent,
     TarefasComponent,
-    MotivosDescontoComponent
+    MotivosDescontoComponent,
+    CargosComponent,
+    EstabelecimentosComponent,
+    NaturezaComponent,
+    ParametrizacaoComponent
   ],
   imports: [
     BrowserModule,

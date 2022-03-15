@@ -2,6 +2,21 @@
     background-color: #F3F5F9;
   }
   
+  .bt-item {
+    &_active {
+      color: black !important;
+      font-weight: 600;
+      border-bottom: 4px solid #E21B23 !important;
+      padding-bottom: 5px;
+    }
+  
+    &_inactive {
+      font-weight: 500;
+      padding-bottom: 5px;
+      color: #8d8d8d;
+    }
+  }
+  
   .table-content {
     overflow-x: auto;
     margin: 0px 0px;
@@ -21,7 +36,6 @@
   
   thead {
     background-color: #f3f5f9;
-  
     th {
       padding: 1rem !important;
       font-weight: 700;
@@ -49,20 +63,10 @@
       color: #000000;
     }
   }
+
   
-  .form-select {
-    height: 48px;
-  }
-  .form-control {
-      height: 48px;
-  }
-  .nav-link.active{
-    width: 25%;
-    background-color: #0dcaf0;
-    font-weight: 500;
-  }
-  .nav-link{
-    color: #000000;
-    font-weight: 500;
-    background-color: #f3f5f9;
-  }
+.btn-primary {
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+  color: #000 !important;
+}

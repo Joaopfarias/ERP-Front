@@ -1,8 +1,10 @@
 <div class="d-block">
   <!-- header -->
   <app-header></app-header>
+  <!-- conteudo da página -->
   <div class="body">
     <div class="bg">
+      <!-- caminho da página -->
       <div class="header ms-5">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -12,6 +14,7 @@
         </nav>
       </div>
       <div class="title  bg ms-5 mt-3">
+        <!-- titulo e subtitulo -->
         <span class="h4 fw-bolder">Financeiro</span>
         <div class="subtitle d-flex">
           <p class="mt-2 text-muted" style="font-size: 13px">
@@ -31,40 +34,48 @@
       </div>
     </div>
     <div class="section border-bottom">
-
+      <!-- abas -->
       <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <!-- Orçamento -->
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="orcamento-tab" data-bs-toggle="tab" data-bs-target="#orcamento"
             type="button" role="tab" aria-controls="orcamento" aria-selected="true"><span>Orçamento</span></button>
         </li>
+        <!-- Solicitações -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="solicitacoes-tab" data-bs-toggle="tab" data-bs-target="#solicitacoes"
             type="button" role="tab" aria-controls="solicitacoes"
             aria-selected="false"><span>Solicitações</span></button>
         </li>
+        <!-- Faturamento -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="faturamento-tab" data-bs-toggle="tab" data-bs-target="#faturamento" type="button"
             role="tab" aria-controls="faturamento" aria-selected="false"><span>Faturamento</span></button>
         </li>
+        <!-- Boletos -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="boletos-tab" data-bs-toggle="tab" data-bs-target="#boletos" type="button"
             role="tab" aria-controls="boletos" aria-selected="false"><span>Boletos</span></button>
         </li>
+        <!-- Boleto Avulso -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="boleto-avulso-tab" data-bs-toggle="tab" data-bs-target="#boleto-avulso"
             type="button" role="tab" aria-controls="boleto-avulso" aria-selected="false"><span>Boleto
               Avulso</span></button>
         </li>
+        <!-- Notas Fiscais Canceladas -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="notas-fiscais-canceladas-tab" data-bs-toggle="tab"
             data-bs-target="#notas-fiscais-canceladas" type="button" role="tab" aria-controls="notas-fiscais-canceladas"
             aria-selected="false"><span>Notas Fiscais Canceladas</span></button>
         </li>
+        <!-- Contas a Receber -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="contas-a-receber-tab" data-bs-toggle="tab" data-bs-target="#contas-a-receber"
             type="button" role="tab" aria-controls="contas-a-receber" aria-selected="false"><span>Contas a
               Receber</span></button>
         </li>
+        <!-- Contas a Pagar -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="contas-a-pagar-tab" data-bs-toggle="tab" data-bs-target="#contas-a-pagar"
             type="button" role="tab" aria-controls="contas-a-pagar" aria-selected="false"><span>Contas a
@@ -72,6 +83,7 @@
         </li>
       </ul>
       <div class="content-section mx-5">
+        <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="orcamento" role="tabpanel" aria-labelledby="orcamento-tab">
             <app-orcamento></app-orcamento>

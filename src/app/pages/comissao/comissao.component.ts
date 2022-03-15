@@ -16,7 +16,6 @@ import { MatTabsModule } from '@angular/material/tabs';
   encapsulation: ViewEncapsulation.None
 })
 export class ComissaoComponent implements OnInit {
-  items = [{}, {}, {}]
 
   constructor() { }
 

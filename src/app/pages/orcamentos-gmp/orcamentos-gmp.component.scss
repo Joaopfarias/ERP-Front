@@ -1,16 +1,30 @@
 .nav-link.active {
+  background-color: #F3F5F9;
   border-bottom: 4px solid #E21B23 !important;
   border: 0;
-  margin: 0px 10px;
+  margin: 0px 5px;
   margin-top: 10px;
   color: black;
+
+  span {
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+  }
 }
 
 .nav-link {
+  background-color: #F3F5F9;
   border: 0;
-  margin: 0px 10px;
+  margin: 0px 5px;
   margin-top: 10px;
   color: black;
+
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #8a8b8e;
+  }
 }
 
 .bg {

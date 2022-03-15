@@ -1,8 +1,10 @@
 <div class="d-block">
-  <!-- header -->
+  <!-- cabeçalho -->
   <app-header></app-header>
+  <!-- conteudo da página -->
   <div class="body">
     <div class="bg">
+      <!-- caminho da página -->
       <div class="header ms-5">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -12,6 +14,7 @@
           </ol>
         </nav>
       </div>
+      <!-- titulo e subtitulo -->
       <div class="title  bg ms-5 mt-3">
         <span class="h4 fw-bolder">Financeiro</span>
         <div class="subtitle d-flex">
@@ -32,32 +35,40 @@
       </div>
     </div>
     <div class="section border-bottom">
+      <!-- Abas -->
       <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <!-- Centro de custos -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios" type="button"
             role="tab" aria-controls="usuarios" aria-selected="true"><span>Centros de custos</span></button>
         </li>
+        <!-- Locais de cobrança -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
             role="tab" aria-controls="empresas" aria-selected="false"><span>Locais de cobrança</span></button>
         </li>
+        <!-- Unidade de negócios -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
             role="tab" aria-controls="empresas" aria-selected="false"><span>Unidade de negócios</span></button>
         </li>
+        <!-- Grupos de plano de contas -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="filial-tab" data-bs-toggle="tab" data-bs-target="#filial" type="button"
             role="tab" aria-controls="filial" aria-selected="false"><span>Grupos de plano de contas</span></button>
         </li>
+        <!-- Subgrupos de plano de contas -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="departamentos-tab" data-bs-toggle="tab" data-bs-target="#departamentos"
             type="button" role="tab" aria-controls="departamentos" aria-selected="false"><span>Subgrupos de plano de
               contas</span></button>
         </li>
+        <!-- Plano de contas -->
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="cbo-tab" data-bs-toggle="tab" data-bs-target="#cbo" type="button" role="tab"
             aria-controls="cbo" aria-selected="false"><span>Plano de contas</span></button>
         </li>
+        <!-- Menu Mais -->
         <li class="nav-item" role="presentation">
           <button class="nav-link active" data-bs-toggle="dropdown" role="button" aria-expanded="false">
             <span>Mais<i class="bi bi-chevron-down mx-2"></i></span></button>
@@ -72,6 +83,7 @@
         </li>
       </ul>
       <div class="content-section mx-5">
+        <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="sindicato" role="tabpanel" aria-labelledby="sindicato-tab">
             <app-motivos-desconto></app-motivos-desconto>

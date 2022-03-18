@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 import { ComissaoComponent } from './pages/comissao/comissao.component';
 import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -85,6 +86,10 @@ const routes: Routes = [
   {
     path: 'dashboard/financeiro',
     component: DashboardFinanceiroComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
 ];
 

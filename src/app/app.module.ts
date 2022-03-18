@@ -41,6 +41,7 @@ import { CargosComponent } from './pages/orcamentos-gmp/cargos/cargos.component'
 import { EstabelecimentosComponent } from './pages/relatorios/estabelecimentos/estabelecimentos.component';
 import { NaturezaComponent } from './pages/repositorios/natureza/natureza.component';
 import { ParametrizacaoComponent } from './pages/comissao/parametrizacao/parametrizacao.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { ParametrizacaoComponent } from './pages/comissao/parametrizacao/paramet
     CargosComponent,
     EstabelecimentosComponent,
     NaturezaComponent,
-    ParametrizacaoComponent
+    ParametrizacaoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

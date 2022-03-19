@@ -12,18 +12,6 @@
         Dashboard
       </a>
     </li>
-    <!-- E-Social -->
-    <li class="nav-item ">
-      <a href="#" class="nav-link side-item py-2" routerLink="/e-social" routerLinkActive="ativado">
-        E-Social
-      </a>
-    </li>
-    <!-- Reinf -->
-    <li class="nav-item">
-      <a href="#" class="nav-link side-item py-2" routerLink="/reinf" routerLinkActive="ativado">
-        Reinf
-      </a>
-    </li>
     <!-- Repositorios -->
     <li class="nav-item">
       <a href="#" class="nav-link side-item py-2" routerLink="/repositorios" routerLinkActive="ativado">
@@ -54,24 +42,6 @@
         Relatorios
       </a>
     </li>
-    <!-- Recursos Humanos -->
-    <li class="nav-item">
-      <a href="#" class="nav-link side-item py-2" routerLink="/recursos-humanos" routerLinkActive="ativado">
-        Recursos Humanos
-      </a>
-    </li>
-    <!-- Parametros -->
-    <li class="nav-item">
-      <a href="#" class="nav-link side-item py-2" routerLink="/parametros" routerLinkActive="ativado">
-        Parametros
-      </a>
-    </li>
-    <!-- Parametros para o e-social -->
-    <li class="nav-item">
-      <a href="#" class="nav-link side-item py-2" routerLink="/parametros-e-social" routerLinkActive="ativado">
-        Parametros para o e-social
-      </a>
-    </li>
   </ul>
   <hr>
   <div class="">
@@ -85,7 +55,7 @@
       </li>
       <!-- Desconectar -->
       <li class="nav-item">
-        <a class="nav-link side-item py-2" aria-current="page" routerLink="/logout" routerLinkActive="ativado">
+        <a class="nav-link side-item py-2" aria-current="page" (click)="logout()">
           <i class="bi bi-arrow-bar-left"></i>
           <span class="m-2">Desconectar</span>
         </a>

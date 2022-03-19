@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filial.component.scss']
 })
 export class FilialComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

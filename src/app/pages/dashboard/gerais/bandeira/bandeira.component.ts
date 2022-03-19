@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bandeira.component.scss']
 })
 export class BandeiraComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

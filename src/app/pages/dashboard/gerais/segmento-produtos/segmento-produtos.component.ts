@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./segmento-produtos.component.scss']
 })
 export class SegmentoProdutosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

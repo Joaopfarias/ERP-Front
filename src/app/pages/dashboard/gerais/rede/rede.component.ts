@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rede.component.scss']
 })
 export class RedeComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

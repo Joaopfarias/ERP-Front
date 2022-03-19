@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gerais-cliente.component.scss']
 })
 export class GeraisClienteComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estabelecimento.component.scss']
 })
 export class EstabelecimentoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

@@ -39,46 +39,64 @@
       <ul class="nav nav-tabs bg" id="myTab" role="tablist">
         <!-- Tarefas -->
         <li class="nav-item ms-4" role="presentation">
-          <button class="nav-link active" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios"
-            type="button" role="tab" aria-controls="usuarios" aria-selected="true"><span>Tarefas</span></button>
+          <button class="nav-link active" id="tarefas-tab" data-bs-toggle="tab" data-bs-target="#tarefas"
+            type="button" role="tab" aria-controls="tarefas" aria-selected="true"><span>Tarefas</span></button>
         </li>
         <!-- Segmentos de produtos -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
-            role="tab" aria-controls="empresas" aria-selected="false"><span>Segmentos de produtos</span></button>
+          <button class="nav-link" id="segmento-produtos-tab" data-bs-toggle="tab" data-bs-target="#segmento-produtos" type="button"
+            role="tab" aria-controls="segmento-produtos" aria-selected="false"><span>Segmentos de produtos</span></button>
         </li>
         <!-- Rede -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="filial-tab" data-bs-toggle="tab" data-bs-target="#filial" type="button"
-            role="tab" aria-controls="filial" aria-selected="false"><span>Rede</span></button>
+          <button class="nav-link" id="rede-tab" data-bs-toggle="tab" data-bs-target="#rede" type="button"
+            role="tab" aria-controls="rede" aria-selected="false"><span>Rede</span></button>
         </li>
         <!-- Bandeira -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="departamentos-tab" data-bs-toggle="tab" data-bs-target="#departamentos"
-            type="button" role="tab" aria-controls="departamentos"
+          <button class="nav-link" id="bandeira-tab" data-bs-toggle="tab" data-bs-target="#bandeira"
+            type="button" role="tab" aria-controls="bandeira"
             aria-selected="false"><span>Bandeira</span></button>
         </li>
         <!-- Estabelecimento -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="cbo-tab" data-bs-toggle="tab" data-bs-target="#cbo" type="button" role="tab"
-            aria-controls="cbo" aria-selected="false"><span>Estabelecimento</span></button>
+          <button class="nav-link" id="estabelecimento-tab" data-bs-toggle="tab" data-bs-target="#estabelecimento" type="button" role="tab"
+            aria-controls="estabelecimento" aria-selected="false"><span>Estabelecimento</span></button>
         </li>
         <!-- Cliente -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="banco-tab" data-bs-toggle="tab" data-bs-target="#banco" type="button" role="tab"
-            aria-controls="banco" aria-selected="false"><span>Cliente</span></button>
+          <button class="nav-link" id="cliente-tab" data-bs-toggle="tab" data-bs-target="#cliente" type="button" role="tab"
+            aria-controls="cliente" aria-selected="false"><span>Cliente</span></button>
         </li>
         <!-- Fornecedor -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="sindicato-tab" data-bs-toggle="tab" data-bs-target="#sindicato" type="button"
-            role="tab" aria-controls="sindicato" aria-selected="false"><span>Fornecedor</span></button>
+          <button class="nav-link" id="fornecedor-tab" data-bs-toggle="tab" data-bs-target="#fornecedor" type="button"
+            role="tab" aria-controls="fornecedor" aria-selected="false"><span>Fornecedor</span></button>
         </li>
       </ul>
       <div class="content-section mx-5">
         <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="usuarios" role="tabpanel" aria-labelledby="usuarios-tab">
+          <div class="tab-pane fade show active" id="tarefas" role="tabpanel" aria-labelledby="tarefas-tab">
             <app-tarefas></app-tarefas>
+          </div>
+          <div class="tab-pane fade show" id="segmento-produtos" role="tabpanel" aria-labelledby="segmento-produtos-tab">
+            <app-segmento-produtos></app-segmento-produtos>
+          </div>
+          <div class="tab-pane fade show" id="rede" role="tabpanel" aria-labelledby="rede-tab">
+            <app-rede></app-rede>
+          </div>
+          <div class="tab-pane fade show" id="bandeira" role="tabpanel" aria-labelledby="bandeira-tab">
+            <app-bandeira></app-bandeira>
+          </div>
+          <div class="tab-pane fade show" id="estabelecimento" role="tabpanel" aria-labelledby="estabelecimento-tab">
+            <app-estabelecimento></app-estabelecimento>
+          </div>
+          <div class="tab-pane fade show" id="cliente" role="tabpanel" aria-labelledby="cliente-tab">
+            <app-gerais-cliente></app-gerais-cliente>
+          </div>
+          <div class="tab-pane fade show" id="fornecedor" role="tabpanel" aria-labelledby="fornecedor-tab">
+            <app-fornecedor></app-fornecedor>
           </div>
         </div>
       </div>

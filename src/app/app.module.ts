@@ -31,7 +31,6 @@ import { EmpresasComponent } from './pages/dashboard/sistema/empresas/empresas.c
 import { DepartamentosComponent } from './pages/dashboard/sistema/departamentos/departamentos.component';
 import { CboComponent } from './pages/dashboard/sistema/cbo/cbo.component';
 import { BancoComponent } from './pages/dashboard/sistema/banco/banco.component';
-import { VinculosComponent } from './pages/dashboard/sistema/vinculos/vinculos.component';
 import { CommonModule } from '@angular/common';
 import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
 import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
@@ -44,17 +43,24 @@ import { ParametrizacaoComponent } from './pages/comissao/parametrizacao/paramet
 import { LoginComponent } from './login/login.component';
 import { KeyuserComponent } from './pages/dashboard/keyuser/keyuser.component';
 import { FuncionariosComponent } from './pages/dashboard/funcionarios/funcionarios.component';
-import { DesligamentosComponent } from './pages/dashboard/keyuser/desligamentos/desligamentos.component';
-import { SituacaoComponent } from './pages/dashboard/keyuser/situacao/situacao.component';
-import { FolhasComponent } from './pages/dashboard/keyuser/folhas/folhas.component';
-import { TiposDescansosComponent } from './pages/dashboard/keyuser/tipos-descansos/tipos-descansos.component';
-import { PrazosContratosComponent } from './pages/dashboard/keyuser/prazos-contratos/prazos-contratos.component';
 import { TiposFuncionariosComponent } from './pages/dashboard/funcionarios/tipos-funcionarios/tipos-funcionarios.component';
 import { FuncionarioComponent } from './pages/dashboard/funcionarios/funcionario/funcionario.component';
 import { DependenteComponent } from './pages/dashboard/funcionarios/dependente/dependente.component';
 import { AfastamentoComponent } from './pages/dashboard/funcionarios/afastamento/afastamento.component';
 import { ExameMedicoComponent } from './pages/dashboard/funcionarios/exame-medico/exame-medico.component';
 import { PlanoSaudeComponent } from './pages/dashboard/funcionarios/plano-saude/plano-saude.component';
+import { SistemaVinculosComponent } from './pages/dashboard/sistema/sistema-vinculos/sistema-vinculos.component';
+import { FuncionariosVinculosComponent } from './pages/dashboard/funcionarios/funcionarios-vinculos/funcionarios-vinculos.component';
+import { KeyuserFolhasComponent } from './pages/dashboard/keyuser/keyuser-folhas/keyuser-folhas.component';
+import { KeyuserDesligamentosComponent } from './pages/dashboard/keyuser/keyuser-desligamentos/keyuser-desligamentos.component';
+import { KeyuserPrazosContratosComponent } from './pages/dashboard/keyuser/keyuser-prazos-contratos/keyuser-prazos-contratos.component';
+import { KeyuserSituacaoComponent } from './pages/dashboard/keyuser/keyuser-situacao/keyuser-situacao.component';
+import { KeyuserTiposDescansosComponent } from './pages/dashboard/keyuser/keyuser-tipos-descansos/keyuser-tipos-descansos.component';
+import { FuncionariosDesligamentosComponent } from './pages/dashboard/funcionarios/funcionarios-desligamentos/funcionarios-desligamentos.component';
+import { FuncionariosFolhasComponent } from './pages/dashboard/funcionarios/funcionarios-folhas/funcionarios-folhas.component';
+import { FuncionariosPrazosContratosComponent } from './pages/dashboard/funcionarios/funcionarios-prazos-contratos/funcionarios-prazos-contratos.component';
+import { FuncionariosSituacaoComponent } from './pages/dashboard/funcionarios/funcionarios-situacao/funcionarios-situacao.component';
+import { FuncionariosTiposDescansosComponent } from './pages/dashboard/funcionarios/funcionarios-tipos-descansos/funcionarios-tipos-descansos.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +90,6 @@ import { PlanoSaudeComponent } from './pages/dashboard/funcionarios/plano-saude/
     DepartamentosComponent,
     CboComponent,
     BancoComponent,
-    VinculosComponent,
     GeraisComponent,
     DashboardFinanceiroComponent,
     TarefasComponent,
@@ -96,17 +101,24 @@ import { PlanoSaudeComponent } from './pages/dashboard/funcionarios/plano-saude/
     LoginComponent,
     KeyuserComponent,
     FuncionariosComponent,
-    DesligamentosComponent,
-    SituacaoComponent,
-    FolhasComponent,
-    TiposDescansosComponent,
-    PrazosContratosComponent,
     TiposFuncionariosComponent,
     FuncionarioComponent,
     DependenteComponent,
     AfastamentoComponent,
     ExameMedicoComponent,
-    PlanoSaudeComponent
+    PlanoSaudeComponent,
+    SistemaVinculosComponent,
+    FuncionariosVinculosComponent,
+    KeyuserFolhasComponent,
+    KeyuserDesligamentosComponent,
+    KeyuserPrazosContratosComponent,
+    KeyuserSituacaoComponent,
+    KeyuserTiposDescansosComponent,
+    FuncionariosDesligamentosComponent,
+    FuncionariosFolhasComponent,
+    FuncionariosPrazosContratosComponent,
+    FuncionariosSituacaoComponent,
+    FuncionariosTiposDescansosComponent
   ],
   imports: [
     BrowserModule,

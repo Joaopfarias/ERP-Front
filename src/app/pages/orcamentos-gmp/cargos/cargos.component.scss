@@ -31,21 +31,6 @@
     background-color: #F3F5F9;
   }
   
-  .bt-item {
-    &_active {
-      color: black !important;
-      font-weight: 600;
-      border-bottom: 4px solid #E21B23 !important;
-      padding-bottom: 5px;
-    }
-  
-    &_inactive {
-      font-weight: 500;
-      padding-bottom: 5px;
-      color: #8d8d8d;
-    }
-  }
-  
   .table-content {
     overflow-x: auto;
     margin: 0px 0px;

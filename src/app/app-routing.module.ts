@@ -5,7 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { ComissaoComponent } from './pages/comissao/comissao.component';
 import { DashboardFinanceiroComponent } from './pages/dashboard/dashboard-financeiro/dashboard-financeiro.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { FuncionariosComponent } from './pages/dashboard/funcionarios/funcionarios.component';
 import { GeraisComponent } from './pages/dashboard/gerais/gerais.component';
+import { KeyuserComponent } from './pages/dashboard/keyuser/keyuser.component';
 import { SistemaComponent } from './pages/dashboard/sistema/sistema.component';
 import { ESocialComponent } from './pages/e-social/e-social.component';
 import { FinanceiroComponent } from './pages/financeiro/financeiro.component';
@@ -57,6 +59,7 @@ const routes: Routes = [
   },
   {
     path: 'recursos-humanos',
+    
     component: RecursosHumanosComponent
   },
   {
@@ -90,6 +93,14 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'dashboard/keyuser',
+    component: KeyuserComponent
+  },
+  {
+    path: 'dashboard/funcionarios',
+    component: FuncionariosComponent
   },
 ];
 

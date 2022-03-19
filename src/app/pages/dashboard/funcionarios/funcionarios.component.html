@@ -1,0 +1,158 @@
+<div class="d-block">
+  <!-- header -->
+  <app-header></app-header>
+  <!-- conteudo da página -->
+  <div class="body">
+    <div class="bg">
+      <!-- caminho da pagina -->
+      <div class="header ms-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
+            <li class="breadcrumb-item active">Cadastros</li>
+            <li class="breadcrumb-item" aria-current="page"><strong>Funcionários</strong></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title  bg ms-5 mt-3">
+        <!-- titulo e subtitulo -->
+        <span class="h4 fw-bolder">Funcionários</span>
+        <div class="subtitle d-flex">
+          <p class="mt-2 text-muted" style="font-size: 13px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley
+            of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including
+            versions of Lorem Ipsum
+          </p>
+          <div class="mx-5"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section border-bottom">
+      <!-- Abas -->
+      <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <!-- Tipos de funcionarios -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link active" id="tipos-funcionarios-tab" data-bs-toggle="tab"
+            data-bs-target="#tipos-funcionarios" type="button" role="tab" aria-controls="tipos-funcionarios"
+            aria-selected="true"><span>Tipos de funcionarios</span></button>
+        </li>
+        <!-- Funcionario -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="funcionario-tab" data-bs-toggle="tab" data-bs-target="#funcionario" type="button"
+            role="tab" aria-controls="funcionario" aria-selected="true"><span>Funcionario</span></button>
+        </li>
+        <!-- Dependente -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="dependente-tab" data-bs-toggle="tab" data-bs-target="#dependente" type="button"
+            role="tab" aria-controls="dependente" aria-selected="true"><span>Dependente</span></button>
+        </li>
+        <!-- Afastamento -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="afastamento-tab" data-bs-toggle="tab" data-bs-target="#afastamento" type="button"
+            role="tab" aria-controls="afastamento" aria-selected="true"><span>Afastamento</span></button>
+        </li>
+        <!-- Exame médico -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="exame-medico-tab" data-bs-toggle="tab" data-bs-target="#exame-medico"
+            type="button" role="tab" aria-controls="exame-medico" aria-selected="true"><span>Exame
+              médico</span></button>
+        </li>
+        <!-- Plano de saúde -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="plano-saude-tab" data-bs-toggle="tab" data-bs-target="#plano-saude" type="button"
+            role="tab" aria-controls="plano-saude" aria-selected="true"><span>Plano de saúde</span></button>
+        </li>
+        <!-- Vínculos -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link" id="vinculos-tab" data-bs-toggle="tab" data-bs-target="#vinculos" type="button"
+            role="tab" aria-controls="vinculos" aria-selected="true"><span>Vínculos</span></button>
+        </li>
+        <!-- Menu Mais -->
+        <li class="nav-item dropdown ms-4" role="presentation">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+            <span>Mais<i class="bi bi-chevron-down ms-2"></i></span>
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Situação -->
+            <li><button class="dropdown-item " id="situacao-tab" data-bs-toggle="tab" data-bs-target="#situacao"
+                type="button" role="tab" aria-controls="situacao" aria-selected="false">
+                Situação</button>
+            </li>
+            <!-- Desligamentos -->
+            <li><button class="dropdown-item " id="desligamentos-tab" data-bs-toggle="tab"
+                data-bs-target="#desligamentos" type="button" role="tab" aria-controls="desligamentos"
+                aria-selected="false">
+                Desligamentos</button>
+            </li>
+            <!-- Folhas -->
+            <li><button class="dropdown-item " id="folhas-tab" data-bs-toggle="tab" data-bs-target="#folhas"
+                type="button" role="tab" aria-controls="folhas" aria-selected="false">
+                Folhas</button>
+            </li>
+            <!-- Tipos de Descansos -->
+            <li><button class="dropdown-item " id="tipos-descansos-tab" data-bs-toggle="tab"
+                data-bs-target="#tipos-descansos" type="button" role="tab" aria-controls="tipos-descansos"
+                aria-selected="false">
+                Tipos de Descansos</button>
+            </li>
+            <!-- Prazos de Contratos -->
+            <li><button class="dropdown-item " id="prazos-contratos-tab" data-bs-toggle="tab"
+                data-bs-target="#prazos-contratos" type="button" role="tab" aria-controls="prazos-contratos"
+                aria-selected="false">
+                Prazos de Contratos</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="content-section mx-5">
+        <!-- conteudo das abas -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tipos-funcionarios" role="tabpanel"
+            aria-labelledby="tipos-funcionarios-tab">
+            <app-tipos-funcionarios></app-tipos-funcionarios>
+          </div>
+          <div class="tab-pane fade show" id="funcionario" role="tabpanel" aria-labelledby="funcionario-tab">
+            <app-funcionario></app-funcionario>
+          </div>
+          <div class="tab-pane fade show" id="dependente" role="tabpanel" aria-labelledby="dependente-tab">
+            <app-dependente></app-dependente>
+          </div>
+          <div class="tab-pane fade show" id="afastamento" role="tabpanel" aria-labelledby="afastamento-tab">
+            <app-afastamento></app-afastamento>
+          </div>
+          <div class="tab-pane fade show" id="exame-medico" role="tabpanel" aria-labelledby="exame-medico-tab">
+            <app-exame-medico></app-exame-medico>
+          </div>
+          <div class="tab-pane fade show" id="plano-saude" role="tabpanel" aria-labelledby="plano-saude-tab">
+            <app-plano-saude></app-plano-saude>
+          </div>
+          <div class="tab-pane fade show" id="vinculos" role="tabpanel" aria-labelledby="vinculos-tab">
+            <app-vinculos></app-vinculos>
+          </div>
+          <div class="tab-pane fade show" id="situacao" role="tabpanel" aria-labelledby="situacao-tab">
+            <app-situacao></app-situacao>
+          </div>
+          <div class="tab-pane fade show" id="desligamentos" role="tabpanel" aria-labelledby="desligamentos-tab">
+            <app-desligamentos></app-desligamentos>
+          </div>
+          <div class="tab-pane fade show" id="folhas" role="tabpanel" aria-labelledby="folhas-tab">
+            <app-folhas></app-folhas>
+          </div>
+          <div class="tab-pane fade show" id="tipos-descansos" role="tabpanel" aria-labelledby="tipos-descansos-tab">
+            <app-tipos-descansos></app-tipos-descansos>
+          </div>
+          <div class="tab-pane fade show" id="prazos-contratos" role="tabpanel" aria-labelledby="prazos-contratos-tab">
+            <app-prazos-contratos></app-prazos-contratos>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

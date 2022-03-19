@@ -1,0 +1,91 @@
+<div class="d-block">
+  <!-- header -->
+  <app-header></app-header>
+  <!-- conteudo da página -->
+  <div class="body">
+    <div class="bg">
+      <!-- caminho da pagina -->
+      <div class="header ms-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" role="button" routerLink="/dashboard">Dashboard</li>
+            <li class="breadcrumb-item active">Cadastros</li>
+            <li class="breadcrumb-item" aria-current="page"><strong>Keyuser</strong></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title  bg ms-5 mt-3">
+        <!-- titulo e subtitulo -->
+        <span class="h4 fw-bolder">Keyuser</span>
+        <div class="subtitle d-flex">
+          <p class="mt-2 text-muted" style="font-size: 13px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley
+            of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including
+            versions of Lorem Ipsum
+          </p>
+          <div class="mx-5"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section border-bottom">
+      <!-- Abas -->
+      <ul class="nav nav-tabs bg" id="myTab" role="tablist">
+        <!-- Situação -->
+        <li class="nav-item ms-4" role="presentation">
+          <button class="nav-link active" id="situacao-tab" data-bs-toggle="tab" data-bs-target="#situacao"
+            type="button" role="tab" aria-controls="situacao" aria-selected="true"><span>Situação</span></button>
+        </li>
+        <!-- Desligamentos -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="desligamentos-tab" data-bs-toggle="tab" data-bs-target="#desligamentos"
+            type="button" role="tab" aria-controls="desligamentos"
+            aria-selected="false"><span>Desligamentos</span></button>
+        </li>
+        <!-- Folhas -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="folhas-tab" data-bs-toggle="tab" data-bs-target="#folhas" type="button"
+            role="tab" aria-controls="folhas" aria-selected="false"><span>Folhas</span></button>
+        </li>
+        <!-- Tipos de Descansos  -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tipos-descansos-tab" data-bs-toggle="tab" data-bs-target="#tipos-descansos"
+            type="button" role="tab" aria-controls="tipos-descansos" aria-selected="false"><span>Tipos de
+              Descansos</span></button>
+        </li>
+        <!-- Prazos de Contratos  -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="prazos-contratos-tab" data-bs-toggle="tab" data-bs-target="#prazos-contratos"
+            type="button" role="tab" aria-controls="prazos-contratos" aria-selected="false"><span>Prazos de
+              Contratos</span></button>
+        </li>
+      </ul>
+      <div class="content-section mx-5">
+        <!-- conteudo das abas -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="situacao" role="tabpanel" aria-labelledby="situacao-tab">
+            <app-situacao></app-situacao>
+          </div>
+          <div class="tab-pane fade" id="desligamentos" role="tabpanel" aria-labelledby="desligamentos-tab">
+            <app-desligamentos></app-desligamentos>
+          </div>
+          <div class="tab-pane fade" id="folhas" role="tabpanel" aria-labelledby="folhas-tab">
+            <app-folhas></app-folhas>
+          </div>
+          <div class="tab-pane fade" id="tipos-descansos" role="tabpanel" aria-labelledby="tipos-descansos-tab">
+            <app-tipos-descansos></app-tipos-descansos>
+          </div>
+          <div class="tab-pane fade" id="prazos-contratos" role="tabpanel" aria-labelledby="prazos-contratos-tab">
+            <app-prazos-contratos></app-prazos-contratos>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

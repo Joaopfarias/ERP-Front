@@ -42,6 +42,19 @@ import { EstabelecimentosComponent } from './pages/relatorios/estabelecimentos/e
 import { NaturezaComponent } from './pages/repositorios/natureza/natureza.component';
 import { ParametrizacaoComponent } from './pages/comissao/parametrizacao/parametrizacao.component';
 import { LoginComponent } from './login/login.component';
+import { KeyuserComponent } from './pages/dashboard/keyuser/keyuser.component';
+import { FuncionariosComponent } from './pages/dashboard/funcionarios/funcionarios.component';
+import { DesligamentosComponent } from './pages/dashboard/keyuser/desligamentos/desligamentos.component';
+import { SituacaoComponent } from './pages/dashboard/keyuser/situacao/situacao.component';
+import { FolhasComponent } from './pages/dashboard/keyuser/folhas/folhas.component';
+import { TiposDescansosComponent } from './pages/dashboard/keyuser/tipos-descansos/tipos-descansos.component';
+import { PrazosContratosComponent } from './pages/dashboard/keyuser/prazos-contratos/prazos-contratos.component';
+import { TiposFuncionariosComponent } from './pages/dashboard/funcionarios/tipos-funcionarios/tipos-funcionarios.component';
+import { FuncionarioComponent } from './pages/dashboard/funcionarios/funcionario/funcionario.component';
+import { DependenteComponent } from './pages/dashboard/funcionarios/dependente/dependente.component';
+import { AfastamentoComponent } from './pages/dashboard/funcionarios/afastamento/afastamento.component';
+import { ExameMedicoComponent } from './pages/dashboard/funcionarios/exame-medico/exame-medico.component';
+import { PlanoSaudeComponent } from './pages/dashboard/funcionarios/plano-saude/plano-saude.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +93,20 @@ import { LoginComponent } from './login/login.component';
     EstabelecimentosComponent,
     NaturezaComponent,
     ParametrizacaoComponent,
-    LoginComponent
+    LoginComponent,
+    KeyuserComponent,
+    FuncionariosComponent,
+    DesligamentosComponent,
+    SituacaoComponent,
+    FolhasComponent,
+    TiposDescansosComponent,
+    PrazosContratosComponent,
+    TiposFuncionariosComponent,
+    FuncionarioComponent,
+    DependenteComponent,
+    AfastamentoComponent,
+    ExameMedicoComponent,
+    PlanoSaudeComponent
   ],
   imports: [
     BrowserModule,

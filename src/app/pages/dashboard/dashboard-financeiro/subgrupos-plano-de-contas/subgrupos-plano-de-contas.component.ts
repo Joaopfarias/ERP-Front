@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subgrupos-plano-de-contas.component.scss']
 })
 export class SubgruposPlanoDeContasComponent implements OnInit {
+  items: any = [{ show: false }, { show: false }, { show: false }]
 
   constructor() { }
 

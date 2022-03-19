@@ -39,54 +39,89 @@
       <ul class="nav nav-tabs bg" id="myTab" role="tablist">
         <!-- Centro de custos -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios" type="button"
-            role="tab" aria-controls="usuarios" aria-selected="true"><span>Centros de custos</span></button>
+          <button class="nav-link active" id="centros-custos-tab" data-bs-toggle="tab" data-bs-target="#centros-custos" type="button"
+            role="tab" aria-controls="centros-custos" aria-selected="true"><span>Centros de custos</span></button>
         </li>
         <!-- Locais de cobrança -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
-            role="tab" aria-controls="empresas" aria-selected="false"><span>Locais de cobrança</span></button>
+          <button class="nav-link" id="locais-cobranca-tab" data-bs-toggle="tab" data-bs-target="#locais-cobranca" type="button"
+            role="tab" aria-controls="locais-cobranca" aria-selected="false"><span>Locais de cobrança</span></button>
         </li>
         <!-- Unidade de negócios -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="empresas-tab" data-bs-toggle="tab" data-bs-target="#empresas" type="button"
-            role="tab" aria-controls="empresas" aria-selected="false"><span>Unidade de negócios</span></button>
+          <button class="nav-link" id="unidades-negocios-tab" data-bs-toggle="tab" data-bs-target="#unidades-negocios" type="button"
+            role="tab" aria-controls="unidades-negocios" aria-selected="false"><span>Unidade de negócios</span></button>
         </li>
         <!-- Grupos de plano de contas -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="filial-tab" data-bs-toggle="tab" data-bs-target="#filial" type="button"
-            role="tab" aria-controls="filial" aria-selected="false"><span>Grupos de plano de contas</span></button>
+          <button class="nav-link" id="grupos-plano-de-contas-tab" data-bs-toggle="tab" data-bs-target="#grupos-plano-de-contas" type="button"
+            role="tab" aria-controls="grupos-plano-de-contas" aria-selected="false"><span>Grupos de plano de contas</span></button>
         </li>
         <!-- Subgrupos de plano de contas -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="departamentos-tab" data-bs-toggle="tab" data-bs-target="#departamentos"
-            type="button" role="tab" aria-controls="departamentos" aria-selected="false"><span>Subgrupos de plano de
+          <button class="nav-link" id="subgrupos-plano-de-contas-tab" data-bs-toggle="tab" data-bs-target="#subgrupos-plano-de-contas"
+            type="button" role="tab" aria-controls="subgrupos-plano-de-contas" aria-selected="false"><span>Subgrupos de plano de
               contas</span></button>
         </li>
         <!-- Plano de contas -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="cbo-tab" data-bs-toggle="tab" data-bs-target="#cbo" type="button" role="tab"
-            aria-controls="cbo" aria-selected="false"><span>Plano de contas</span></button>
+          <button class="nav-link" id="plano-de-contas-tab" data-bs-toggle="tab" data-bs-target="#plano-de-contas" type="button" role="tab"
+            aria-controls="plano-de-contas" aria-selected="false"><span>Plano de contas</span></button>
         </li>
         <!-- Menu Mais -->
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-            <span>Mais<i class="bi bi-chevron-down mx-2"></i></span></button>
+        <li class="nav-item dropdown ms-4" role="presentation">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+            <span>Mais<i class="bi bi-chevron-down ms-2"></i></span>
+          </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Perfil de aprovação</a></li>
-            <li><a class="dropdown-item" id="sindicato-tab" data-bs-toggle="tab" data-bs-target="#sindicato"
-                type="button" role="tab" aria-controls="sindicato" aria-selected="false">
-                Motivos para desconto/acréscimo</a>
+            <!-- Situação -->
+            <li><button class="dropdown-item " id="perfil-aprovacao-tab" data-bs-toggle="tab" data-bs-target="#perfil-aprovacao"
+                type="button" role="tab" aria-controls="perfil-aprovacao" aria-selected="false">
+                Perfil de aprovação</button>
             </li>
-            <li><a class="dropdown-item" href="#">Serviços para notas fiscais</a></li>
+            <!-- Desligamentos -->
+            <li><button class="dropdown-item " id="motivos-desconto-tab" data-bs-toggle="tab"
+                data-bs-target="#motivos-desconto" type="button" role="tab" aria-controls="motivos-desconto"
+                aria-selected="false">
+                Motivos para desconto/acréscimo</button>
+            </li>
+            <!-- Folhas -->
+            <li><button class="dropdown-item " id="servicos-notas-fiscais-tab" data-bs-toggle="tab" data-bs-target="#servicos-notas-fiscais"
+                type="button" role="tab" aria-controls="servicos-notas-fiscais" aria-selected="false">
+                Serviços para notas fiscais</button>
+            </li>
           </ul>
         </li>
       </ul>
       <div class="content-section mx-5">
         <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="sindicato" role="tabpanel" aria-labelledby="sindicato-tab">
+          <div class="tab-pane fade show active" id="centros-custos" role="tabpanel" aria-labelledby="centros-custos-tab">
+            <app-centros-custos></app-centros-custos>
+          </div>
+          <div class="tab-pane fade show" id="locais-cobranca" role="tabpanel" aria-labelledby="locais-cobranca-tab">
+            <app-locais-cobranca></app-locais-cobranca>
+          </div>
+          <div class="tab-pane fade show" id="unidades-negocios" role="tabpanel" aria-labelledby="unidades-negocios-tab">
+            <app-unidades-negocios></app-unidades-negocios>
+          </div>
+          <div class="tab-pane fade show" id="grupos-plano-de-contas" role="tabpanel" aria-labelledby="grupos-plano-de-contas-tab">
+            <app-grupos-plano-de-contas></app-grupos-plano-de-contas>
+          </div>
+          <div class="tab-pane fade show" id="subgrupos-plano-de-contas" role="tabpanel" aria-labelledby="subgrupos-plano-de-contas-tab">
+            <app-subgrupos-plano-de-contas></app-subgrupos-plano-de-contas>
+          </div>
+          <div class="tab-pane fade show" id="plano-de-contas" role="tabpanel" aria-labelledby="plano-de-contas-tab">
+            <app-plano-de-contas></app-plano-de-contas>
+          </div>
+          <div class="tab-pane fade show" id="perfil-aprovacao" role="tabpanel" aria-labelledby="perfil-aprovacao-tab">
+            <app-perfil-aprovacao></app-perfil-aprovacao>
+          </div>
+          <div class="tab-pane fade show" id="motivos-desconto" role="tabpanel" aria-labelledby="motivos-desconto-tab">
             <app-motivos-desconto></app-motivos-desconto>
+          </div>
+          <div class="tab-pane fade show" id="servicos-notas-fiscais" role="tabpanel" aria-labelledby="servicos-notas-fiscais-tab">
+            <app-servicos-notas-fiscais></app-servicos-notas-fiscais>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./centros-custos.component.scss']
 })
 export class CentrosCustosComponent implements OnInit {
+  items: any = [{ show: false }, { show: false }, { show: false }]
 
   constructor() { }
 

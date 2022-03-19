@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./locais-cobranca.component.scss']
 })
 export class LocaisCobrancaComponent implements OnInit {
+  items: any = [{ show: false }, { show: false }, { show: false }]
 
   constructor() { }
 

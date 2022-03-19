@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./unidades-negocios.component.scss']
 })
 export class UnidadesNegociosComponent implements OnInit {
+  items: any = [{ show: false }, { show: false }, { show: false }]
 
   constructor() { }
 

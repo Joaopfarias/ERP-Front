@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyuser-desligamentos.component.scss']
 })
 export class KeyuserDesligamentosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

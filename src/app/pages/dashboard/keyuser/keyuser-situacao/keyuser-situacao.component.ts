@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyuser-situacao.component.scss']
 })
 export class KeyuserSituacaoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

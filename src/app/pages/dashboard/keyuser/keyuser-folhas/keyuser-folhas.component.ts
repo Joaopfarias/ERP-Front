@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyuser-folhas.component.scss']
 })
 export class KeyuserFolhasComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

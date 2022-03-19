@@ -61,6 +61,51 @@ import { FuncionariosFolhasComponent } from './pages/dashboard/funcionarios/func
 import { FuncionariosPrazosContratosComponent } from './pages/dashboard/funcionarios/funcionarios-prazos-contratos/funcionarios-prazos-contratos.component';
 import { FuncionariosSituacaoComponent } from './pages/dashboard/funcionarios/funcionarios-situacao/funcionarios-situacao.component';
 import { FuncionariosTiposDescansosComponent } from './pages/dashboard/funcionarios/funcionarios-tipos-descansos/funcionarios-tipos-descansos.component';
+import { TiposComponent } from './pages/repositorios/tipos/tipos.component';
+import { RepositoriosRepositoriosComponent } from './pages/repositorios/repositorios-repositorios/repositorios-repositorios.component';
+import { ConfiguracaoComissaoComponent } from './pages/comissao/configuracao-comissao/configuracao-comissao.component';
+import { SolicitacoesComponent } from './pages/financeiro/solicitacoes/solicitacoes.component';
+import { FaturamentoComponent } from './pages/financeiro/faturamento/faturamento.component';
+import { BoletosComponent } from './pages/financeiro/boletos/boletos.component';
+import { NotasCanceladasComponent } from './pages/financeiro/notas-canceladas/notas-canceladas.component';
+import { ProjetosComponent } from './pages/orcamentos-gmp/projetos/projetos.component';
+import { MargensLucroComponent } from './pages/orcamentos-gmp/margens-lucro/margens-lucro.component';
+import { GruposSociaisComponent } from './pages/orcamentos-gmp/grupos-sociais/grupos-sociais.component';
+import { GruposPrecoComponent } from './pages/orcamentos-gmp/grupos-preco/grupos-preco.component';
+import { TiposPrecoComponent } from './pages/orcamentos-gmp/tipos-preco/tipos-preco.component';
+import { TiposSociaisComponent } from './pages/orcamentos-gmp/tipos-sociais/tipos-sociais.component';
+import { EncargosSociaisComponent } from './pages/orcamentos-gmp/encargos-sociais/encargos-sociais.component';
+import { ReferenciaPrecoComponent } from './pages/orcamentos-gmp/referencia-preco/referencia-preco.component';
+import { PlanilhaCustosComponent } from './pages/orcamentos-gmp/planilha-custos/planilha-custos.component';
+import { FaturamentosComponent } from './pages/orcamentos-gmp/faturamentos/faturamentos.component';
+import { ClientesComponent } from './pages/relatorios/clientes/clientes.component';
+import { PlanoContaComponent } from './pages/relatorios/plano-conta/plano-conta.component';
+import { CentrosCustoComponent } from './pages/relatorios/centros-custo/centros-custo.component';
+import { LancamentosBancariosComponent } from './pages/relatorios/lancamentos-bancarios/lancamentos-bancarios.component';
+import { RecolhimentoImpostosComponent } from './pages/relatorios/recolhimento-impostos/recolhimento-impostos.component';
+import { ComissoesPrevistasComponent } from './pages/relatorios/comissoes-previstas/comissoes-previstas.component';
+import { ComissoesFaturadasComponent } from './pages/relatorios/comissoes-faturadas/comissoes-faturadas.component';
+import { FluxoDeCaixaComponent } from './pages/relatorios/fluxo-de-caixa/fluxo-de-caixa.component';
+import { EntradasSaidasComponent } from './pages/relatorios/entradas-saidas/entradas-saidas.component';
+import { BoletosNaoPagosComponent } from './pages/relatorios/boletos-nao-pagos/boletos-nao-pagos.component';
+import { LancamentosNaoPagosComponent } from './pages/relatorios/lancamentos-nao-pagos/lancamentos-nao-pagos.component';
+import { TotalizacaoDeFaturamentosComponent } from './pages/relatorios/totalizacao-de-faturamentos/totalizacao-de-faturamentos.component';
+import { FilialComponent } from './pages/dashboard/sistema/filial/filial.component';
+import { SindicatoComponent } from './pages/dashboard/sistema/sindicato/sindicato.component';
+import { SegmentoProdutosComponent } from './pages/dashboard/gerais/segmento-produtos/segmento-produtos.component';
+import { RedeComponent } from './pages/dashboard/gerais/rede/rede.component';
+import { BandeiraComponent } from './pages/dashboard/gerais/bandeira/bandeira.component';
+import { EstabelecimentoComponent } from './pages/dashboard/gerais/estabelecimento/estabelecimento.component';
+import { GeraisClienteComponent } from './pages/dashboard/gerais/gerais-cliente/gerais-cliente.component';
+import { FornecedorComponent } from './pages/dashboard/gerais/fornecedor/fornecedor.component';
+import { CentrosCustosComponent } from './pages/dashboard/dashboard-financeiro/centros-custos/centros-custos.component';
+import { GruposPlanoDeContasComponent } from './pages/dashboard/dashboard-financeiro/grupos-plano-de-contas/grupos-plano-de-contas.component';
+import { SubgruposPlanoDeContasComponent } from './pages/dashboard/dashboard-financeiro/subgrupos-plano-de-contas/subgrupos-plano-de-contas.component';
+import { PlanoDeContasComponent } from './pages/dashboard/dashboard-financeiro/plano-de-contas/plano-de-contas.component';
+import { PerfilAprovacaoComponent } from './pages/dashboard/dashboard-financeiro/perfil-aprovacao/perfil-aprovacao.component';
+import { ServicosNotasFiscaisComponent } from './pages/dashboard/dashboard-financeiro/servicos-notas-fiscais/servicos-notas-fiscais.component';
+import { UnidadesNegociosComponent } from './pages/dashboard/dashboard-financeiro/unidades-negocios/unidades-negocios.component';
+import { LocaisCobrancaComponent } from './pages/dashboard/dashboard-financeiro/locais-cobranca/locais-cobranca.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +163,52 @@ import { FuncionariosTiposDescansosComponent } from './pages/dashboard/funcionar
     FuncionariosFolhasComponent,
     FuncionariosPrazosContratosComponent,
     FuncionariosSituacaoComponent,
-    FuncionariosTiposDescansosComponent
+    FuncionariosTiposDescansosComponent,
+    TiposComponent,
+    RepositoriosRepositoriosComponent,
+    ConfiguracaoComissaoComponent,
+    SolicitacoesComponent,
+    FaturamentoComponent,
+    BoletosComponent,
+    NotasCanceladasComponent,
+    ProjetosComponent,
+    MargensLucroComponent,
+    GruposSociaisComponent,
+    GruposPrecoComponent,
+    TiposPrecoComponent,
+    TiposSociaisComponent,
+    EncargosSociaisComponent,
+    ReferenciaPrecoComponent,
+    PlanilhaCustosComponent,
+    FaturamentosComponent,
+    ClientesComponent,
+    PlanoContaComponent,
+    CentrosCustoComponent,
+    LancamentosBancariosComponent,
+    RecolhimentoImpostosComponent,
+    ComissoesPrevistasComponent,
+    ComissoesFaturadasComponent,
+    FluxoDeCaixaComponent,
+    EntradasSaidasComponent,
+    BoletosNaoPagosComponent,
+    LancamentosNaoPagosComponent,
+    TotalizacaoDeFaturamentosComponent,
+    FilialComponent,
+    SindicatoComponent,
+    SegmentoProdutosComponent,
+    RedeComponent,
+    BandeiraComponent,
+    EstabelecimentoComponent,
+    GeraisClienteComponent,
+    FornecedorComponent,
+    CentrosCustosComponent,
+    GruposPlanoDeContasComponent,
+    SubgruposPlanoDeContasComponent,
+    PlanoDeContasComponent,
+    PerfilAprovacaoComponent,
+    ServicosNotasFiscaisComponent,
+    UnidadesNegociosComponent,
+    LocaisCobrancaComponent
   ],
   imports: [
     BrowserModule,

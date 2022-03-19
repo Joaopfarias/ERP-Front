@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VinculosComponent } from './vinculos.component';
+import { SistemaVinculosComponent } from './sistema-vinculos.component';
 
-describe('VinculosComponent', () => {
-  let component: VinculosComponent;
-  let fixture: ComponentFixture<VinculosComponent>;
+describe('SistemaVinculosComponent', () => {
+  let component: SistemaVinculosComponent;
+  let fixture: ComponentFixture<SistemaVinculosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VinculosComponent ]
+      declarations: [ SistemaVinculosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VinculosComponent);
+    fixture = TestBed.createComponent(SistemaVinculosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

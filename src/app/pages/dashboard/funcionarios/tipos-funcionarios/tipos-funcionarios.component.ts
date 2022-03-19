@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tipos-funcionarios.component.scss']
 })
 export class TiposFuncionariosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

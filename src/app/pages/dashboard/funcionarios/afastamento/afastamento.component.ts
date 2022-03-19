@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./afastamento.component.scss']
 })
 export class AfastamentoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plano-saude.component.scss']
 })
 export class PlanoSaudeComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

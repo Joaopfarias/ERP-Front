@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exame-medico.component.scss']
 })
 export class ExameMedicoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

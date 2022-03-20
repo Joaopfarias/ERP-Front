@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grupos-sociais.component.scss']
 })
 export class GruposSociaisComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

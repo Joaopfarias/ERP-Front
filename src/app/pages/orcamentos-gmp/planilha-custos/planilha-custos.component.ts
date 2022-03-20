@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planilha-custos.component.scss']
 })
 export class PlanilhaCustosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

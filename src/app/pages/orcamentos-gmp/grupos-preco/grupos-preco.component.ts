@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grupos-preco.component.scss']
 })
 export class GruposPrecoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

@@ -2,7 +2,7 @@
   background-color: #F3F5F9;
   border-bottom: 4px solid #E21B23 !important;
   border: 0;
-  margin: 0px 5px;
+  margin: 0px 3px;
   margin-top: 10px;
   color: black;
 
@@ -16,7 +16,7 @@
 .nav-link {
   background-color: #F3F5F9;
   border: 0;
-  margin: 0px 5px;
+  margin: 0px 3px;
   margin-top: 10px;
   color: black;
 
@@ -91,4 +91,9 @@ tbody {
   background-color: #fff !important;
   border-color: #ced4da !important;
   color: #000 !important;
+}
+
+
+.dropdown-toggle::after{
+  visibility: hidden !important;
 }

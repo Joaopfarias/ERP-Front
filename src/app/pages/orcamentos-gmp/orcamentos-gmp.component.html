@@ -38,61 +38,125 @@
         <ul class="nav nav-tabs bg" id="myTab" role="tablist">
           <!-- Projetos -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="orcamento-tab" data-bs-toggle="tab" data-bs-target="#orcamento"
-              type="button" role="tab" aria-controls="orcamento" aria-selected="true"><span>Projetos</span></button>
+            <button class="nav-link active" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos"
+              type="button" role="tab" aria-controls="projetos" aria-selected="true"><span>Projetos</span></button>
           </li>
           <!-- Cargos -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="cargos-tab" data-bs-toggle="tab" data-bs-target="#cargos"
+            <button class="nav-link" id="cargos-tab" data-bs-toggle="tab" data-bs-target="#cargos"
               type="button" role="tab" aria-controls="cargos" aria-selected="false"><span>Cargos</span></button>
           </li>
           <!-- Margens de Lucro -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="faturamento-tab" data-bs-toggle="tab" data-bs-target="#faturamento"
-              type="button" role="tab" aria-controls="faturamento" aria-selected="false"><span>Margens de
+            <button class="nav-link" id="margens-lucro-tab" data-bs-toggle="tab" data-bs-target="#margens-lucro"
+              type="button" role="tab" aria-controls="margens-lucro" aria-selected="false"><span>Margens de
                 Lucro</span></button>
           </li>
           <!-- Grupos de referencia de preços -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="boletos-tab" data-bs-toggle="tab" data-bs-target="#boletos" type="button"
-              role="tab" aria-controls="boletos" aria-selected="false"><span>Grupos de referencia de
+            <button class="nav-link" id="grupos-preco-tab" data-bs-toggle="tab" data-bs-target="#grupos-preco" type="button"
+              role="tab" aria-controls="grupos-preco" aria-selected="false"><span>Grupos de referencia de
                 preços</span></button>
           </li>
           <!-- Tipos de referencia de preços -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="boleto-avulso-tab" data-bs-toggle="tab" data-bs-target="#boleto-avulso"
-              type="button" role="tab" aria-controls="boleto-avulso" aria-selected="false"><span>Tipos de referencia de
+            <button class="nav-link" id="tipos-preco-tab" data-bs-toggle="tab" data-bs-target="#tipos-preco"
+              type="button" role="tab" aria-controls="tipos-preco" aria-selected="false"><span>Tipos de referencia de
                 preços</span></button>
           </li>
           <!-- Grupos de encargos sociais -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="notas-fiscais-canceladas-tab" data-bs-toggle="tab"
-              data-bs-target="#notas-fiscais-canceladas" type="button" role="tab"
-              aria-controls="notas-fiscais-canceladas" aria-selected="false"><span>Grupos de encargos
+            <button class="nav-link" id="grupos-sociais-tab" data-bs-toggle="tab"
+              data-bs-target="#grupos-sociais" type="button" role="tab"
+              aria-controls="grupos-sociais" aria-selected="false"><span>Grupos de encargos
                 sociais</span></button>
           </li>
           <!-- Tipos de encargos sociais -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contas-a-receber-tab" data-bs-toggle="tab" data-bs-target="#contas-a-receber"
-              type="button" role="tab" aria-controls="contas-a-receber" aria-selected="false"><span>Tipos de encargos
+            <button class="nav-link" id="tipos-sociais-tab" data-bs-toggle="tab" data-bs-target="#tipos-sociais"
+              type="button" role="tab" aria-controls="tipos-sociais" aria-selected="false"><span>Tipos de encargos
                 sociais</span></button>
           </li>
-          <!-- Mais -->
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contas-a-pagar-tab" data-bs-toggle="tab" data-bs-target="#contas-a-pagar"
-              type="button" role="tab" aria-controls="contas-a-pagar" aria-selected="false"><span>Mais<i
-                  class="bi bi-chevron-down mx-2"></i></span></button>
+          <!-- Menu Mais -->
+          <li class="nav-item dropdown ms-4" role="presentation">
+            <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+              <span>Mais<i class="bi bi-chevron-down ms-2"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Encargos Sociais -->
+              <li><button class="dropdown-item " id="encargos-sociais-tab" data-bs-toggle="tab" data-bs-target="#encargos-sociais"
+                  type="button" role="tab" aria-controls="encargos-sociais" aria-selected="false">
+                  Encargos Sociais</button>
+              </li>
+              <!-- Referência de Preço -->
+              <li><button class="dropdown-item " id="referencia-preco-tab" data-bs-toggle="tab"
+                  data-bs-target="#referencia-preco" type="button" role="tab" aria-controls="referencia-preco"
+                  aria-selected="false">
+                  Referência de Preço</button>
+              </li>
+              <!-- Planilha de Custos -->
+              <li><button class="dropdown-item " id="planilha-custos-tab" data-bs-toggle="tab" data-bs-target="#planilha-custos"
+                  type="button" role="tab" aria-controls="planilha-custos" aria-selected="false">
+                  Planilha de Custos</button>
+              </li>
+              <!-- Faturamentos -->
+              <li><button class="dropdown-item " id="faturamentos-tab" data-bs-toggle="tab" data-bs-target="#faturamentos"
+                  type="button" role="tab" aria-controls="faturamentos" aria-selected="false">
+                  Faturamentos</button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
       <div class="content-section mx-5">
         <!-- conteudo das abas -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="cargos" role="tabpanel" aria-labelledby="cargos-tab">
+          <div class="tab-pane fade show active" id="projetos" role="tabpanel" aria-labelledby="projetos-tab">
+            <app-projetos></app-projetos>
+          </div>
+          <div class="tab-pane fade" id="cargos" role="tabpanel" aria-labelledby="cargos-tab">
             <app-cargos></app-cargos>
+          </div>
+          <div class="tab-pane fade" id="margens-lucro" role="tabpanel" aria-labelledby="margens-lucro-tab">
+            <app-margens-lucro></app-margens-lucro>
+          </div>
+          <div class="tab-pane fade" id="grupos-preco" role="tabpanel" aria-labelledby="grupos-preco-tab">
+            <app-grupos-preco></app-grupos-preco>
+          </div>
+          <div class="tab-pane fade" id="tipos-preco" role="tabpanel" aria-labelledby="tipos-preco-tab">
+            <app-tipos-preco></app-tipos-preco>
+          </div>
+          <div class="tab-pane fade" id="grupos-sociais" role="tabpanel" aria-labelledby="grupos-sociais-tab">
+            <app-grupos-sociais></app-grupos-sociais>
+          </div>
+          <div class="tab-pane fade" id="tipos-sociais" role="tabpanel" aria-labelledby="tipos-sociais-tab">
+            <app-tipos-sociais></app-tipos-sociais>
+          </div>
+          <div class="tab-pane fade" id="encargos-sociais" role="tabpanel" aria-labelledby="encargos-sociais-tab">
+            <app-encargos-sociais></app-encargos-sociais>
+          </div>
+          <div class="tab-pane fade" id="referencia-preco" role="tabpanel" aria-labelledby="referencia-preco-tab">
+            <app-referencia-preco></app-referencia-preco>
+          </div>
+          <div class="tab-pane fade" id="planilha-custos" role="tabpanel" aria-labelledby="planilha-custos-tab">
+            <app-planilha-custos></app-planilha-custos>
+          </div>
+          <div class="tab-pane fade" id="faturamentos" role="tabpanel" aria-labelledby="faturamentos-tab">
+            <app-faturamentos></app-faturamentos>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+projetos
+cargos
+margens-lucro
+grupos-preco
+tipos-preco
+grupos-sociais
+tipos-sociais
+encargos-sociais
+referencia-preco
+planilha-custos
+faturamentos

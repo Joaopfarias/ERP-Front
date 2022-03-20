@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./referencia-preco.component.scss']
 })
 export class ReferenciaPrecoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

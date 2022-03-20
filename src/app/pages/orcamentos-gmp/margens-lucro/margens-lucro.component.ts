@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./margens-lucro.component.scss']
 })
 export class MargensLucroComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

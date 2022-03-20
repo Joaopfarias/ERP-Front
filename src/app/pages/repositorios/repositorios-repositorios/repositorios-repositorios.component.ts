@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repositorios-repositorios.component.scss']
 })
 export class RepositoriosRepositoriosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

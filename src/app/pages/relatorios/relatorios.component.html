@@ -42,44 +42,77 @@
           </li>
           <!-- Clientes -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="cargos-tab" data-bs-toggle="tab" data-bs-target="#cargos" type="button"
-              role="tab" aria-controls="cargos" aria-selected="false"><span>Clientes</span></button>
+            <button class="nav-link" id="clientes-tab" data-bs-toggle="tab" data-bs-target="#clientes" type="button"
+              role="tab" aria-controls="clientes" aria-selected="false"><span>Clientes</span></button>
           </li>
           <!-- Plano de conta -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="faturamento-tab" data-bs-toggle="tab" data-bs-target="#faturamento"
-              type="button" role="tab" aria-controls="faturamento" aria-selected="false"><span>Plano de
+            <button class="nav-link" id="plano-conta-tab" data-bs-toggle="tab" data-bs-target="#plano-conta"
+              type="button" role="tab" aria-controls="plano-conta" aria-selected="false"><span>Plano de
                 conta</span></button>
           </li>
           <!-- Centros de custo -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="boletos-tab" data-bs-toggle="tab" data-bs-target="#boletos" type="button"
-              role="tab" aria-controls="boletos" aria-selected="false"><span>Centros de custo</span></button>
+            <button class="nav-link" id="centros-custo-tab" data-bs-toggle="tab" data-bs-target="#centros-custo" type="button"
+              role="tab" aria-controls="centros-custo" aria-selected="false"><span>Centros de custo</span></button>
           </li>
           <!-- Lançamentos bancários -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="boleto-avulso-tab" data-bs-toggle="tab" data-bs-target="#boleto-avulso"
-              type="button" role="tab" aria-controls="boleto-avulso" aria-selected="false"><span>Lançamentos
+            <button class="nav-link" id="lancamentos-bancarios-tab" data-bs-toggle="tab" data-bs-target="#lancamentos-bancarios"
+              type="button" role="tab" aria-controls="lancamentos-bancarios" aria-selected="false"><span>Lançamentos
                 bancários</span></button>
           </li>
           <!-- Recolhimento de impostos -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="notas-fiscais-canceladas-tab" data-bs-toggle="tab"
-              data-bs-target="#notas-fiscais-canceladas" type="button" role="tab"
-              aria-controls="notas-fiscais-canceladas" aria-selected="false"><span>Recolhimento de
+            <button class="nav-link" id="recolhimento-impostos-tab" data-bs-toggle="tab"
+              data-bs-target="#recolhimento-impostos" type="button" role="tab"
+              aria-controls="recolhimento-impostos" aria-selected="false"><span>Recolhimento de
                 impostos</span></button>
           </li>
           <!-- Comissões previstas -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contas-a-receber-tab" data-bs-toggle="tab" data-bs-target="#contas-a-receber"
-              type="button" role="tab" aria-controls="contas-a-receber" aria-selected="false"><span>Comissões
+            <button class="nav-link" id="comissoes-previstas-tab" data-bs-toggle="tab" data-bs-target="#comissoes-previstas"
+              type="button" role="tab" aria-controls="comissoes-previstas" aria-selected="false"><span>Comissões
                 previstas</span></button>
           </li>
-          <!-- Mais -->
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contas-a-pagar-tab" data-bs-toggle="tab" data-bs-target="#contas-a-pagar"
-              type="button" role="tab" aria-controls="contas-a-pagar" aria-selected="false"><span>Mais<i
-                  class="bi bi-chevron-down mx-2"></i></span></button>
+          <!-- Menu Mais -->
+          <li class="nav-item dropdown ms-4" role="presentation">
+            <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+              <span>Mais<i class="bi bi-chevron-down ms-2"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Comissões Faturadas -->
+              <li><button class="dropdown-item " id="comissoes-faturadas-tab" data-bs-toggle="tab" data-bs-target="#comissoes-faturadas"
+                  type="button" role="tab" aria-controls="comissoes-faturadas" aria-selected="false">
+                  Comissões Faturadas</button>
+              </li>
+              <!-- Fluxo de Caixa -->
+              <li><button class="dropdown-item " id="fluxo-de-caixa-tab" data-bs-toggle="tab"
+                  data-bs-target="#fluxo-de-caixa" type="button" role="tab" aria-controls="fluxo-de-caixa"
+                  aria-selected="false">
+                  Fluxo de Caixa</button>
+              </li>
+              <!-- Entradas/Saídas -->
+              <li><button class="dropdown-item " id="entradas-saidas-tab" data-bs-toggle="tab" data-bs-target="#entradas-saidas"
+                  type="button" role="tab" aria-controls="entradas-saidas" aria-selected="false">
+                  Entradas/Saídas</button>
+              </li>
+              <!-- Boletos não pagos -->
+              <li><button class="dropdown-item " id="boletos-nao-pagos-tab" data-bs-toggle="tab" data-bs-target="#boletos-nao-pagos"
+                  type="button" role="tab" aria-controls="boletos-nao-pagos" aria-selected="false">
+                  Boletos não pagos</button>
+              </li>
+              <!-- Lançamentos não pagos -->
+              <li><button class="dropdown-item " id="lancamentos-nao-pagos-tab" data-bs-toggle="tab" data-bs-target="#lancamentos-nao-pagos"
+                  type="button" role="tab" aria-controls="lancamentos-nao-pagos" aria-selected="false">
+                  Lançamentos não pagos</button>
+              </li>
+              <!-- Totalização de Faturamentos -->
+              <li><button class="dropdown-item " id="totalizacao-de-faturamentos-tab" data-bs-toggle="tab" data-bs-target="#totalizacao-de-faturamentos"
+                  type="button" role="tab" aria-controls="totalizacao-de-faturamentos" aria-selected="false">
+                  Totalização de Faturamentos</button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -90,6 +123,54 @@
           <div class="tab-pane fade show active" id="estabelecimentos" role="tabpanel"
             aria-labelledby="estabelecimentos-tab">
             <app-estabelecimentos></app-estabelecimentos>
+          </div>
+          <div class="tab-pane fade show" id="clientes" role="tabpanel"
+            aria-labelledby="clientes-tab">
+            <app-clientes></app-clientes>
+          </div>
+          <div class="tab-pane fade show" id="plano-conta" role="tabpanel"
+            aria-labelledby="plano-conta-tab">
+            <app-plano-conta></app-plano-conta>
+          </div>
+          <div class="tab-pane fade show" id="centros-custo" role="tabpanel"
+            aria-labelledby="centros-custo-tab">
+            <app-centros-custo></app-centros-custo>
+          </div>
+          <div class="tab-pane fade show" id="lancamentos-bancarios" role="tabpanel"
+            aria-labelledby="lancamentos-bancarios-tab">
+            <app-relatorios-lancamentos-bancarios></app-relatorios-lancamentos-bancarios>
+          </div>
+          <div class="tab-pane fade show" id="recolhimento-impostos" role="tabpanel"
+            aria-labelledby="recolhimento-impostos-tab">
+            <app-recolhimento-impostos></app-recolhimento-impostos>
+          </div>
+          <div class="tab-pane fade show" id="comissoes-previstas" role="tabpanel"
+            aria-labelledby="comissoes-previstas-tab">
+            <app-comissoes-previstas></app-comissoes-previstas>
+          </div>
+          <div class="tab-pane fade show" id="comissoes-faturadas" role="tabpanel"
+            aria-labelledby="comissoes-faturadas-tab">
+            <app-comissoes-faturadas></app-comissoes-faturadas>
+          </div>
+          <div class="tab-pane fade show" id="fluxo-de-caixa" role="tabpanel"
+            aria-labelledby="fluxo-de-caixa-tab">
+            <app-fluxo-de-caixa></app-fluxo-de-caixa>
+          </div>
+          <div class="tab-pane fade show" id="entradas-saidas" role="tabpanel"
+            aria-labelledby="entradas-saidas-tab">
+            <app-entradas-saidas></app-entradas-saidas>
+          </div>
+          <div class="tab-pane fade show" id="boletos-nao-pagos" role="tabpanel"
+            aria-labelledby="boletos-nao-pagos-tab">
+            <app-boletos-nao-pagos></app-boletos-nao-pagos>
+          </div>
+          <div class="tab-pane fade show" id="lancamentos-nao-pagos" role="tabpanel"
+            aria-labelledby="lancamentos-nao-pagos-tab">
+            <app-lancamentos-nao-pagos></app-lancamentos-nao-pagos>
+          </div>
+          <div class="tab-pane fade show" id="totalizacao-de-faturamentos" role="tabpanel"
+            aria-labelledby="totalizacao-de-faturamentos-tab">
+            <app-totalizacao-de-faturamentos></app-totalizacao-de-faturamentos>
           </div>
         </div>
       </div>

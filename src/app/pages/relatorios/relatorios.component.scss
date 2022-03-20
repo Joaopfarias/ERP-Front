@@ -91,3 +91,7 @@ tbody {
   border-color: #ced4da !important;
   color: #000 !important;
 }
+
+.dropdown-toggle::after{
+  visibility: hidden !important;
+}

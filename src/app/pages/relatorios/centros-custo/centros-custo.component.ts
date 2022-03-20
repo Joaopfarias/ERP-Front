@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./centros-custo.component.scss']
 })
 export class CentrosCustoComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

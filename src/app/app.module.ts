@@ -81,7 +81,6 @@ import { FaturamentosComponent } from './pages/orcamentos-gmp/faturamentos/fatur
 import { ClientesComponent } from './pages/relatorios/clientes/clientes.component';
 import { PlanoContaComponent } from './pages/relatorios/plano-conta/plano-conta.component';
 import { CentrosCustoComponent } from './pages/relatorios/centros-custo/centros-custo.component';
-import { LancamentosBancariosComponent } from './pages/relatorios/lancamentos-bancarios/lancamentos-bancarios.component';
 import { RecolhimentoImpostosComponent } from './pages/relatorios/recolhimento-impostos/recolhimento-impostos.component';
 import { ComissoesPrevistasComponent } from './pages/relatorios/comissoes-previstas/comissoes-previstas.component';
 import { ComissoesFaturadasComponent } from './pages/relatorios/comissoes-faturadas/comissoes-faturadas.component';
@@ -106,6 +105,12 @@ import { PerfilAprovacaoComponent } from './pages/dashboard/dashboard-financeiro
 import { ServicosNotasFiscaisComponent } from './pages/dashboard/dashboard-financeiro/servicos-notas-fiscais/servicos-notas-fiscais.component';
 import { UnidadesNegociosComponent } from './pages/dashboard/dashboard-financeiro/unidades-negocios/unidades-negocios.component';
 import { LocaisCobrancaComponent } from './pages/dashboard/dashboard-financeiro/locais-cobranca/locais-cobranca.component';
+import { LancamentoBancarioComponent } from './pages/financeiro/contas-a-pagar/lancamento-bancario/lancamento-bancario.component';
+import { ImportarComponent } from './pages/financeiro/contas-a-pagar/importar/importar.component';
+import { AprovacaoComponent } from './pages/financeiro/contas-a-pagar/aprovacao/aprovacao.component';
+import { PagamentoComponent } from './pages/financeiro/contas-a-pagar/pagamento/pagamento.component';
+import { CnabContasAPagarComponent } from './pages/financeiro/contas-a-pagar/cnab-contas-a-pagar/cnab-contas-a-pagar.component';
+import { RelatoriosLancamentosBancariosComponent } from './pages/relatorios/relatorios-lancamentos-bancarios/relatorios-lancamentos-bancarios.component';
 
 @NgModule({
   declarations: [
@@ -184,7 +189,6 @@ import { LocaisCobrancaComponent } from './pages/dashboard/dashboard-financeiro/
     ClientesComponent,
     PlanoContaComponent,
     CentrosCustoComponent,
-    LancamentosBancariosComponent,
     RecolhimentoImpostosComponent,
     ComissoesPrevistasComponent,
     ComissoesFaturadasComponent,
@@ -208,7 +212,13 @@ import { LocaisCobrancaComponent } from './pages/dashboard/dashboard-financeiro/
     PerfilAprovacaoComponent,
     ServicosNotasFiscaisComponent,
     UnidadesNegociosComponent,
-    LocaisCobrancaComponent
+    LocaisCobrancaComponent,
+    LancamentoBancarioComponent,
+    ImportarComponent,
+    AprovacaoComponent,
+    PagamentoComponent,
+    CnabContasAPagarComponent,
+    RelatoriosLancamentosBancariosComponent
   ],
   imports: [
     BrowserModule,

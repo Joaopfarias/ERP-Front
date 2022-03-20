@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plano-conta.component.scss']
 })
 export class PlanoContaComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

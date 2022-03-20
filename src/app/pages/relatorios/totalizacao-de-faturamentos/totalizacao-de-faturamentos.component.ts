@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./totalizacao-de-faturamentos.component.scss']
 })
 export class TotalizacaoDeFaturamentosComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

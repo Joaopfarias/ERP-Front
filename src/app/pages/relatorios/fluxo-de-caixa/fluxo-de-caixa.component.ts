@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fluxo-de-caixa.component.scss']
 })
 export class FluxoDeCaixaComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

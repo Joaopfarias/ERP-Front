@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./notas-canceladas.component.scss']
 })
 export class NotasCanceladasComponent implements OnInit {
+  items = [{}, {}, {}]
 
   constructor() { }
 

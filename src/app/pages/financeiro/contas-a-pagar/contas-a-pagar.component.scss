@@ -56,12 +56,13 @@
   .form-control {
       height: 48px;
   }
-  .nav-link.active{
+  .nav-pills .nav-link.active{
     width: 25%;
     background-color: #0dcaf0;
+    color: #fff;
     font-weight: 500;
   }
-  .nav-link{
+  .nav-pills .nav-link{
     color: #000000;
     font-weight: 500;
     background-color: #f3f5f9;

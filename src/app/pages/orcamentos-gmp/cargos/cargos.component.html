@@ -1,92 +1,272 @@
+<div class="header-section d-block">
+  <h2 class="fw-bolder mb-0 mt-4">Cargos</h2>
+  <div class="d-flex">
+    <div class="search-box col-md-4 me-3">
+      <div class="input-group mt-4 border rounded-3 p-1 bg-white">
+        <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
+          class="form-control bg-none border-0">
+        <div class="input-group-append border-0">
+          <button id="button-addon3" type="button" class="btn btn-link text-dark">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4" data-bs-toggle="modal" data-bs-target="#exampleModalAdd">Adicionar</button>
+  </div>
+</div>
+<div class="body-section mt-4">
+  <div class="table-content">
+    <table class="table table-borderless">
+      <thead class="">
+        <tr class="border-bottom">
+          <th>ATIVO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>NOME<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>SALÁRIO BASE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>ADICIONAL NOTURNO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>PERICULOSIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>INSALUBRIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of items; let i = index">
+        <tr class="border-bottom" (click)="expandCell(i)">
+          <th>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+            </div>
+          </th>
+          <th>15</th>
+          <th>Ajudante Geral</th>
+          <th>R$ 57,00</th>
+          <th>Não</th>
+          <th>Não</th>
+          <th>Não</th>
+          <th>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+              ...
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+            <div class="d-flex justify-content-evenly">
+              <div class="">
+                <span class="text-muted"><strong>VT POR DIA:</strong> R$ 7,65</span><br />
+                <span class="text-muted"><strong>JORNADA VR:</strong> 22</span>
+              </div><br />
+              <div class="">
+                <span class="text-muted"><strong>% DESCONTO VT:</strong> 6,00%</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>JORNADA VT:</strong> 22</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>VR POR DIA:</strong> R$ 20,00</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>% DESCONTO VR:</strong> 20%</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="table-footer border">
+      <div class="d-flex justify-content-between">
+        <label for="label" class="col-form-label">10 de 400 resultados</label>
 
-        <div class="header-section d-block">
-            <h2 class="fw-bolder mb-0 mt-4">Cargos</h2>
-            <div class="d-flex">
-              <div class="search-box col-md-4 me-3">
-                <div class="input-group mt-4 border rounded-3 p-1 bg-white">
-                  <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
-                    class="form-control bg-none border-0">
-                  <div class="input-group-append border-0">
-                    <button id="button-addon3" type="button" class="btn btn-link text-dark">
-                      <i class="bi bi-search"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Adicionar</button>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="label" class="col-form-label">Você está na página</label>
+          </div>
+          <div class="col-auto d-flex">
+            <select class="form-select" id="select" name="select">
+              <option value="1">10000</option>
+            </select>
+            <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
+            <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Editar -->
+<div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabelEdit" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title mb-0" id="exampleModalLabel">Editar</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="mx-3">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Salario Base</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Codigo</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
             </div>
           </div>
-          <div class="body-section mt-4">
-            <div class="table-content">
-              <table class="table table-borderless">
-                <thead class="">
-                  <tr class="border-bottom">
-                    <th>ATIVO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>NOME<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>SALÁRIO BASE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>ADICIONAL NOTURNO<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>PERICULOSIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>INSALUBRIDADE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  </tr>
-                </thead>
-                <tbody *ngFor="let item of items; let i = index">
-                  <tr class="border-bottom" (click)="expandCell(i)">
-                    <th>
-                      <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                      </div>
-                    </th>
-                    <th>15</th>
-                    <th>Ajudante Geral</th>
-                    <th>R$ 57,00</th>
-                    <th>Não</th>
-                    <th>Não</th>
-                    <th>Não</th>
-                    <th><button class="btn btn-lg">...</button></th>
-                  </tr>
-                  <tr>
-                    <td colspan=8 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
-                      <div class="d-flex justify-content-evenly">
-                        <div class="">
-                          <span class="text-muted"><strong>VT POR DIA:</strong> R$ 7,65</span><br />
-                          <span class="text-muted"><strong>JORNADA VR:</strong> 22</span>
-                        </div><br />
-                        <div class="">
-                          <span class="text-muted"><strong>% DESCONTO VT:</strong> 6,00%</span>
-                        </div>
-                        <div class="">
-                          <span class="text-muted"><strong>JORNADA VT:</strong> 22</span>
-                        </div>
-                        <div class="">
-                          <span class="text-muted"><strong>VR POR DIA:</strong> R$ 20,00</span>
-                        </div>
-                        <div class="">
-                          <span class="text-muted"><strong>% DESCONTO VR:</strong> 20%</span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="table-footer border">
-                <div class="d-flex justify-content-between">
-                  <label for="label" class="col-form-label">10 de 400 resultados</label>
-  
-                  <div class="row g-3 align-items-center">
-                    <div class="col-auto">
-                      <label for="label" class="col-form-label">Você está na página</label>
-                    </div>
-                    <div class="col-auto d-flex">
-                      <select class="form-select" id="select" name="select">
-                        <option value="1">10000</option>
-                      </select>
-                      <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
-                      <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
-                    </div>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">VT/DIA</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">% Desconto VT</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Jornada em Dias VT</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">VR/DIA</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">% Desconto VR</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Jornada em Dias VR</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Adicional Noturno
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Periculosidade
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Insalubridade
+                </label>
               </div>
             </div>
           </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Adicionar -->
+<div class="modal fade" id="exampleModalAdd" tabindex="-1" aria-labelledby="exampleModalLabelAdd" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title mb-0" id="exampleModalLabel">Adicionar</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="mx-3">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Salario Base</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Codigo</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">VT/DIA</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">% Desconto VT</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Jornada em Dias VT</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="nome" class="form-label">VR/DIA</label>
+              <input type="text" class="form-control" id="nome" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">% Desconto VR</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="salario-base" class="form-label">Jornada em Dias VR</label>
+              <input type="text" class="form-control" id="salario-base" placeholder=" ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Adicional Noturno
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Periculosidade
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Insalubridade
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

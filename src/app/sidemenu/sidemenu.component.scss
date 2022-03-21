@@ -6,12 +6,13 @@
   border-radius: 0px !important;
   border-right: 3.5px solid #E21B23 !important;
   background-color: #F3F5F9;
-  ;
   color: black !important;
   font-weight: 600;
 }
 
 .side-item {
+  margin-top: 10px !important;
+  padding: .75rem 1rem !important;
   color: #8d8d8d;
 }
 
@@ -21,7 +22,9 @@
   font-weight: 600;
 }
 
-.nav-pills .nav-link {
+.nav-pills .nav-link{
+  padding: 10px 0px;
+  margin-top: 10px !important;
   padding: .75rem 1rem !important;
   font-weight: 500;
 

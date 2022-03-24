@@ -1,100 +1,99 @@
+<div class="header-section d-flex">
+  <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4 me-3">Filtro</button>
+  <!-- input de pesquisa -->
+  <div class="search-box col-md-4 me-3">
+    <div class="input-group mt-4 border rounded-3 p-1 bg-white">
+      <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
+        class="form-control bg-none border-0">
+      <div class="input-group-append border-0">
+        <button id="button-addon3" type="button" class="btn btn-link text-dark">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4 me-auto">Adicionar</button>
+  <div class="col-md-2 align-self-end mx-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>selecione</option>
+      <option value="1">selecione</option>
+      <option value="2">selecione</option>
+      <option value="3">selecione</option>
+    </select>
+  </div>
+  <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Exportar</button>
+</div>
+<div class="body-section mt-4">
+  <div class="table-content">
+    <table class="table table-borderless">
+      <thead class="">
+        <tr class="border-bottom">
+          <!-- colunas -->
+          <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>EMPRESA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>CLIENTE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>CATEGORIA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>VENDEDOR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>STATUS<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+          <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of items; let i = index">
+        <tr class="border-bottom" (click)="expandCell(i)">
+          <!-- linhas -->
+          <th>7138</th>
+          <th><span class="text-dark">ABASTECER PROMO EIRELI</span></th>
+          <th>3S BERRINI ALIMENTAÇÃO</th>
+          <th>Atendimento em Lojas</th>
+          <th>ALESSANDRA ANDREOZZI</th>
+          <th style="padding-top: 15px;"><span class="status-item">Realizado</span></th>
+          <th><button class="btn btn-lg">...</button></th>
+        </tr>
+        <tr>
+          <!-- linha expansiva -->
+          <td colspan=7 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
+            <div class="d-flex justify-content-evenly">
+              <div class="">
+                <span class="text-muted"><strong>ORÇ. PAI:</strong></span><br />
+                <span class="text-muted"><strong>VENCIMENTO:</strong> 18/12/2022</span>
+              </div><br />
+              <div class="">
+                <span class="text-muted"><strong>FATURAMENTO:</strong> 19/12/2022</span><br />
+                <span class="text-muted"><strong>CALCULE 13º:</strong> 5%</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>COBRA EPI:</strong> NÃO</span><br />
+                <span class="text-muted"><strong>LOJAS:</strong> 105</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>TOTAL PREV:</strong> 80.157,00</span><br />
+                <span class="text-muted"><strong>DATA STATUS:</strong> 10/05/2021</span>
+              </div>
+              <div class="">
+                <span class="text-muted"><strong>INCLUSÃO:</strong> 10/05/2021</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-footer my-3 border">
+    <div class="d-flex justify-content-between">
+      <label for="label" class="col-form-label" style="align-self: center;">10 de 400 resultados</label>
 
-        <div class="header-section d-flex">
-            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4 me-3">Filtro</button>
-            <!-- input de pesquisa -->
-            <div class="search-box col-md-4 me-3">
-              <div class="input-group mt-4 border rounded-3 p-1 bg-white">
-                <input type="search" placeholder="Pesquisar" aria-describedby="button-addon3"
-                  class="form-control bg-none border-0">
-                <div class="input-group-append border-0">
-                  <button id="button-addon3" type="button" class="btn btn-link text-dark">
-                    <i class="bi bi-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4 me-auto">Adicionar</button>
-            <div class="col-md-2 align-self-end mx-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>selecione</option>
-                <option value="1">selecione</option>
-                <option value="2">selecione</option>
-                <option value="3">selecione</option>
-              </select>
-            </div>
-            <button type="button" class="btn rounded-3 text-white btn-info px-4 mt-4">Exportar</button>
-          </div>
-          <div class="body-section mt-4">
-            <div class="table-content">
-              <table class="table table-borderless">
-                <thead class="">
-                  <tr class="border-bottom">
-                    <!-- colunas -->
-                    <th>ID<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>EMPRESA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>CLIENTE<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>CATEGORIA<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>VENDEDOR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>STATUS<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                    <th>EDITAR<i class="fa-solid fa-sort text-muted ms-1 fa-xs"></i></th>
-                  </tr>
-                </thead>
-                <tbody *ngFor="let item of items; let i = index">
-                  <tr class="border-bottom"  (click)="expandCell(i)">
-                    <!-- linhas -->
-                    <th>7138</th>
-                    <th><span class="text-dark">ABASTECER PROMO EIRELI</span></th>
-                    <th>3S BERRINI ALIMENTAÇÃO</th>
-                    <th>Atendimento em Lojas</th>
-                    <th>ALESSANDRA ANDREOZZI</th>
-                    <th style="padding-top: 15px;"><span class="status-item">Realizado</span></th>
-                    <th><button class="btn btn-lg">...</button></th>
-                  </tr>
-                  <tr>
-                    <!-- linha expansiva -->
-                    <td colspan=7 *ngIf="item.show == true" class="border" style="background-color: #f3f5f9;">
-                      <div class="d-flex justify-content-evenly">
-                          <div class="">
-                            <span class="text-muted"><strong>ORÇ. PAI:</strong></span><br />
-                            <span class="text-muted"><strong>VENCIMENTO:</strong> 18/12/2022</span>
-                          </div><br />
-                          <div class="">
-                            <span class="text-muted"><strong>FATURAMENTO:</strong> 19/12/2022</span><br />
-                            <span class="text-muted"><strong>CALCULE 13º:</strong> 5%</span>
-                          </div>
-                          <div class="">
-                            <span class="text-muted"><strong>COBRA EPI:</strong> NÃO</span><br />
-                            <span class="text-muted"><strong>LOJAS:</strong> 105</span>
-                          </div>
-                          <div class="">
-                            <span class="text-muted"><strong>TOTAL PREV:</strong> 80.157,00</span><br />
-                            <span class="text-muted"><strong>DATA STATUS:</strong> 10/05/2021</span>
-                          </div>
-                          <div class="">
-                            <span class="text-muted"><strong>INCLUSÃO:</strong> 10/05/2021</span>
-                          </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="table-footer border">
-                <div class="d-flex justify-content-between">
-                  <label for="label" class="col-form-label" style="align-self: center;">10 de 400 resultados</label>
-  
-                  <div class="row g-3 align-items-center">
-                    <div class="col-auto">
-                      <label for="label" class="col-form-label">Você está na página</label>
-                    </div>
-                    <div class="col-auto d-flex">
-                      <select class="form-select" id="select" name="select">
-                        <option value="1">10000</option>
-                      </select>
-                      <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
-                      <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="label" class="col-form-label">Você está na página</label>
+        </div>
+        <div class="col-auto d-flex">
+          <select class="form-select" id="select" name="select">
+            <option value="1">10000</option>
+          </select>
+          <button class="btn btn-light mx-1"><i class="bi bi-chevron-left text-muted"></i></button>
+          <button class="btn btn-primary mx-1"><i class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
